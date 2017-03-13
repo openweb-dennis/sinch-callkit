@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINMessageClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINMessageClient</TokenIdentifier>
+			<Abstract type="html">SINMessageClient provides the entry point to the messaging functionality of the Sinch SDK.
+A SINMessageClient can be acquired via SINClient.</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageClient/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Assigns a delegate to the Message Client.</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINMessageClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINMessageClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageClient/delegate</TokenIdentifier>
+			<Abstract type="html">Assigns a delegate to the Message Client.</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINMessageClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINMessageClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINMessageClient/delegate</TokenIdentifier>
+			<Abstract type="html">Assigns a delegate to the Message Client.</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINMessageClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINMessageClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageClient/sendMessage:</TokenIdentifier>
+			<Abstract type="html">Sends an outgoing message.</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINMessageClientDelegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/clm/SINOutgoingMessage/messageWithRecipient:text:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)sendMessage:(SINOutgoingMessage *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to be sent.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendMessage:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

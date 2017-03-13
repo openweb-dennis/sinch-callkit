@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINManagedPush.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINManagedPush</TokenIdentifier>
+			<Abstract type="html">SINManagedPush is a helper class to manage push notification credentials both
+for regular Remote Push Notifications and VoIP Push Notifications (which is
+available since iOS 8).</Abstract>
+			<DeclaredIn>SINManagedPush.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINManagedPush/setUserNotificationTypes:</TokenIdentifier>
+			<Abstract type="html">Specify what user notification types should be used for remote push notifications.</Abstract>
+			<DeclaredIn>SINManagedPush.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) UIUserNotificationType userNotificationTypes</Declaration>
+			
+			
+			<Anchor>//api/name/userNotificationTypes</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINManagedPush/userNotificationTypes</TokenIdentifier>
+			<Abstract type="html">Specify what user notification types should be used for remote push notifications.</Abstract>
+			<DeclaredIn>SINManagedPush.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) UIUserNotificationType userNotificationTypes</Declaration>
+			
+			
+			<Anchor>//api/name/userNotificationTypes</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINManagedPush/userNotificationTypes</TokenIdentifier>
+			<Abstract type="html">Specify what user notification types should be used for remote push notifications.</Abstract>
+			<DeclaredIn>SINManagedPush.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) UIUserNotificationType userNotificationTypes</Declaration>
+			
+			
+			<Anchor>//api/name/userNotificationTypes</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINManagedPush/setDesiredPushType:</TokenIdentifier>
+			<Abstract type="html">Requests registration of either VoIP remote notifications or regular remote
+notifications (similar to PushKit&apos;s [PKPushRegistry setDesiredPushTypes:]).</Abstract>
+			<DeclaredIn>SINManagedPush.h</DeclaredIn>
+			
+			<Declaration>- (void)setDesiredPushType:(NSString *)pushType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pushType</Name>
+					<Abstract type="html">Desired SINPushType NSString constant, e.g. SINPushTypeVoIP or SINPushTypeRemote</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDesiredPushType:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINManagedPush/setDesiredPushTypeAutomatically</TokenIdentifier>
+			<Abstract type="html">Set desired push type based on runtime detection of iOS version and whether
+PushKit is linked or not.  This method will invoke [self setDesiredPushType:SINPushTypeVoIP]
+if PushKit is linked, else [self setDesiredPushType:SINPushTypeRemote].</Abstract>
+			<DeclaredIn>SINManagedPush.h</DeclaredIn>
+			
+			<Declaration>- (void)setDesiredPushTypeAutomatically</Declaration>
+			
+			
+			<Anchor>//api/name/setDesiredPushTypeAutomatically</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINManagedPush/registerUserNotificationSettings</TokenIdentifier>
+			<Abstract type="html">Similar to [UIApplication registerUserNotificationSettings:], this will
+register user notification settings based on [SINManagedPush userNotificationTypes].</Abstract>
+			<DeclaredIn>SINManagedPush.h</DeclaredIn>
+			
+			<Declaration>- (void)registerUserNotificationSettings</Declaration>
+			
+			
+			<Anchor>//api/name/registerUserNotificationSettings</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINManagedPush/setDisplayName:</TokenIdentifier>
+			<Abstract type="html">Specify a display name to be used when Sinch sends a push notification on
+behalf of the local user (e.g. for an outgoing call). This method will
+automatically invoke [SINClient setPushNotificationDisplayName:] when a
+new Sinch client is started.</Abstract>
+			<DeclaredIn>SINManagedPush.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setDisplayName:(NSString *)displayName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>displayName</Name>
+					<Abstract type="html">Display name that will be injected into remote push notification
+alert message.
+
+Display name will be injected into the localization string SININCOMINGCALLDISPLAYNAME.
+It will also be passed along in Google Cloud Messaging push notifications if a remote
+user&apos;s device is an Android device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDisplayName:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

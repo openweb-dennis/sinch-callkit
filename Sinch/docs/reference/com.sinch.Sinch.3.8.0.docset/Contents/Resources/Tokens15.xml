@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+			<Abstract type="html">The SINClient is the Sinch SDK entry point.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving client.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/delegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving client.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINClient/delegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving client.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/setUserId:</TokenIdentifier>
+			<Abstract type="html">ID of the local user</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/userId</TokenIdentifier>
+			<Abstract type="html">ID of the local user</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINClient/userId</TokenIdentifier>
+			<Abstract type="html">ID of the local user</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/setSupportCalling:</TokenIdentifier>
+			<Abstract type="html">Specify whether this device should support making and receiving calls.
+Default is NO.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setSupportCalling:(BOOL)supported</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>supported</Name>
+					<Abstract type="html">Enable or disable support making and receiving calls.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSupportCalling:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/setSupportMessaging:</TokenIdentifier>
+			<Abstract type="html">Specify whether this application should support sending and receiving instant messages.
+Default is NO.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINMessageClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setSupportMessaging:(BOOL)supported</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>supported</Name>
+					<Abstract type="html">Enable or disable support for instant messaging.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSupportMessaging:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/setSupportPushNotifications:</TokenIdentifier>
+			<Abstract type="html">Specify whether this device should receive incoming calls via push
+notifications.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClient/registerPushNotificationData:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClient/unregisterPushNotificationData</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClient/relayRemotePushNotificationPayload:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setSupportPushNotifications:(BOOL)supported</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>supported</Name>
+					<Abstract type="html">Enable or disable support for push notifications.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSupportPushNotifications:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/enableManagedPushNotifications</TokenIdentifier>
+			<Abstract type="html">Specify that the Sinch SDK and platform should take care of
+sending the push notification to the other device via the appropriate
+push notification gateway (i.e. Apple Push Notification Service for iOS devices,
+and Google Cloud Messaging (GCM) for Android devices).</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClient/registerPushNotificationDeviceToken:type:apsEnvironment:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClient/unregisterPushNotificationDeviceToken</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClient/relayRemotePushNotificationPayload:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enableManagedPushNotifications</Declaration>
+			
+			
+			<Anchor>//api/name/enableManagedPushNotifications</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/setSupportActiveConnectionInBackground:</TokenIdentifier>
+			<Abstract type="html">Specify whether to keep the active connection open if the application
+leaves foreground.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)setSupportActiveConnectionInBackground:(BOOL)supported</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>supported</Name>
+					<Abstract type="html">Specifies whether the active connection should be kept open
+even if the application leaves foreground.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSupportActiveConnectionInBackground:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/start</TokenIdentifier>
+			<Abstract type="html">Start client to enable the calling functionality.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/terminate</TokenIdentifier>
+			<Abstract type="html">Terminate client when the calling functionality is no longer needed.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)terminate</Declaration>
+			
+			
+			<Anchor>//api/name/terminate</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/terminateGracefully</TokenIdentifier>
+			<Abstract type="html">Terminates the client, while still leaving it some time to finish up currently
+pending tasks, for example finishing pending HTTP requests.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)terminateGracefully</Declaration>
+			
+			
+			<Anchor>//api/name/terminateGracefully</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/stop</TokenIdentifier>
+			<Abstract type="html">THIS METHOD IS DEPRECATED. See [SINClient terminate]</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/isStarted</TokenIdentifier>
+			<Abstract type="html">Check whether client is successfully started.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isStarted</Declaration>
+			
+			<ReturnValue><Abstract type="html">A boolean value indicating whether the client has successfully
+started and is ready to perform calling functionality.</Abstract></ReturnValue>
+			<Anchor>//api/name/isStarted</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/startListeningOnActiveConnection</TokenIdentifier>
+			<Abstract type="html">This will establish an active keep-alive connection as a signaling channel
+for receiving incoming calls.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)startListeningOnActiveConnection</Declaration>
+			
+			
+			<Anchor>//api/name/startListeningOnActiveConnection</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/stopListeningOnActiveConnection</TokenIdentifier>
+			<Abstract type="html">This will close the connection that is kept alive and used as signaling
+channel for receiving incoming calls. This method should be used when the
+application no longer intends to utilize the long-lived connection for
+receiving incoming calls.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)stopListeningOnActiveConnection</Declaration>
+			
+			
+			<Anchor>//api/name/stopListeningOnActiveConnection</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/relayRemotePushNotificationPayload:</TokenIdentifier>
+			<Abstract type="html">Method used to forward the Sinch-specific payload extracted from an incoming
+Apple Push Notification.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINNotificationResult</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINNotificationResult&gt;)relayRemotePushNotificationPayload:(NSString *)payload</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>payload</Name>
+					<Abstract type="html">Sinch-specific payload which was transferred with an
+Apple Push Notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Value indicating initial inspection of push notification payload.</Abstract></ReturnValue>
+			<Anchor>//api/name/relayRemotePushNotificationPayload:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/relayRemotePushNotification:</TokenIdentifier>
+			<Abstract type="html">Method used to forward a remote notification dictionary if using [SINClient enableManagedPushNotifications];</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINNotificationResult</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINNotificationResult&gt;)relayRemotePushNotification:(NSDictionary *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">Remote notification payload which was transferred with an Apple Push Notification.
+and received via [UIApplicationDelegate application:didReceiveRemoteNotification:].</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Value indicating initial inspection of push notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/relayRemotePushNotification:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/relayLocalNotification:</TokenIdentifier>
+			<Abstract type="html">Method used to handle a local notification which has been scheduled and
+taken action upon by the application user.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClient/isStarted</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intf/SINNotificationResult</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINNotificationResult&gt;)relayLocalNotification:(UILocalNotification *)notification</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">UILocalNotification</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Value indicating outcome of the attempt to handle the notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/relayLocalNotification:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/registerPushNotificationData:</TokenIdentifier>
+			<Abstract type="html">Register device-specific data that can be used to identify this device
+and tie it to an Apple Push Notification device token.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)registerPushNotificationData:(NSData *)pushNotificationData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pushNotificationData</Name>
+					<Abstract type="html">Device-specific data that can be used to
+tie a device to a specific Apple Push
+Notification device token
+
+The pushNotificationData is what will be passed back in
+[SINCallDelegate call:shouldSendPushNotifications:]
+in the caller&apos;s application, unless the application on the destination device
+(the device on which this method is called) is not running in the background,
+and is required to woken up it via a Apple Push Notification.
+
+See [UIApplication registerForRemoteNotificationTypes:] on how to obtain
+the current device token.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerPushNotificationData:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/unregisterPushNotificationData</TokenIdentifier>
+			<Abstract type="html">Unregister previously registered device-specific data that is used to
+identify this device and tie it to an Apple Push Notification device token.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)unregisterPushNotificationData</Declaration>
+			
+			
+			<Anchor>//api/name/unregisterPushNotificationData</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/registerPushNotificationDeviceToken:type:apsEnvironment:</TokenIdentifier>
+			<Abstract type="html">Register push notification device token for using &quot;Sinch Managed Push Notifications&quot;.
+The preferred way of enabling push notifications is to use SINManagedPush which
+will automatically register the device token with the client, but this method can
+also be used directly.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/SINAPSEnvironment</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)registerPushNotificationDeviceToken:(NSData *)deviceToken type:(NSString *)pushType apsEnvironment:(SINAPSEnvironment)apsEnvironment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceToken</Name>
+					<Abstract type="html">A token that identifies the device to APNs.</Abstract>
+				</Parameter><Parameter>
+					<Name>pushType</Name>
+					<Abstract type="html">SINPushType NSString constant, i.e. SINPushTypeVoIP or SINPushTypeRemote</Abstract>
+				</Parameter><Parameter>
+					<Name>apsEnvironment</Name>
+					<Abstract type="html">Specification of which Apple Push Notification Service environment
+the device token is bound to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerPushNotificationDeviceToken:type:apsEnvironment:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/unregisterPushNotificationDeviceToken</TokenIdentifier>
+			<Abstract type="html">Unregister push notification device token when using &quot;Sinch Managed Push Notifications&quot;
+Example if the user log out, the device token should be unregistered.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)unregisterPushNotificationDeviceToken</Declaration>
+			
+			
+			<Anchor>//api/name/unregisterPushNotificationDeviceToken</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/setPushNotificationDisplayName:</TokenIdentifier>
+			<Abstract type="html">Specify a display name to be used when the Sinch client sends a push notification on
+behalf of the local user (e.g. for an outgoing call).
+This will only be used when using [SINClient enableManagedPushNotifications].</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)setPushNotificationDisplayName:(NSString *)displayName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>displayName</Name>
+					<Abstract type="html">display name may at most be 255 bytes (UTF-8 encoded) long.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPushNotificationDisplayName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/callClient</TokenIdentifier>
+			<Abstract type="html">Returns the call client object for placing and receiving calls.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClient/setSupportCalling:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINCallClient&gt;)callClient</Declaration>
+			
+			
+			<Anchor>//api/name/callClient</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/messageClient</TokenIdentifier>
+			<Abstract type="html">Returns the message client object for sending messages and adding
+delegates for message events.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClient/setSupportMessaging:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINMessageClient&gt;)messageClient</Declaration>
+			
+			
+			<Anchor>//api/name/messageClient</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/audioController</TokenIdentifier>
+			<Abstract type="html">Retrieve the interface for the audio controller, which provides access
+to various audio related functionality, such as muting the microphone,
+enabling the speaker, and playing ring tones.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;SINAudioController&gt;)audioController</Declaration>
+			
+			
+			<Anchor>//api/name/audioController</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClient/videoController</TokenIdentifier>
+			<Abstract type="html">Retrieve the interface for the video controller, which provides
+access to video related functionality.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;SINVideoController&gt;)videoController</Declaration>
+			
+			
+			<Anchor>//api/name/videoController</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

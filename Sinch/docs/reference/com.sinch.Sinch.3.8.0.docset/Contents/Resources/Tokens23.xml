@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINMessageDeliveryInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINMessageDeliveryInfo</TokenIdentifier>
+			<Abstract type="html">SINMessageDeliveryInfo contains additional information pertaining
+to a delivered message.</Abstract>
+			<DeclaredIn>SINMessageDeliveryInfo.h</DeclaredIn>
+            
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINMessageClientDelegate/messageDelivered:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageDeliveryInfo/setMessageId:</TokenIdentifier>
+			<Abstract type="html">The message&apos;s identifier</Abstract>
+			<DeclaredIn>SINMessageDeliveryInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *messageId</Declaration>
+			
+			
+			<Anchor>//api/name/messageId</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageDeliveryInfo/messageId</TokenIdentifier>
+			<Abstract type="html">The message&apos;s identifier</Abstract>
+			<DeclaredIn>SINMessageDeliveryInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *messageId</Declaration>
+			
+			
+			<Anchor>//api/name/messageId</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINMessageDeliveryInfo/messageId</TokenIdentifier>
+			<Abstract type="html">The message&apos;s identifier</Abstract>
+			<DeclaredIn>SINMessageDeliveryInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *messageId</Declaration>
+			
+			
+			<Anchor>//api/name/messageId</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageDeliveryInfo/setRecipientId:</TokenIdentifier>
+			<Abstract type="html">The identifier of the recipient</Abstract>
+			<DeclaredIn>SINMessageDeliveryInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *recipientId</Declaration>
+			
+			
+			<Anchor>//api/name/recipientId</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageDeliveryInfo/recipientId</TokenIdentifier>
+			<Abstract type="html">The identifier of the recipient</Abstract>
+			<DeclaredIn>SINMessageDeliveryInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *recipientId</Declaration>
+			
+			
+			<Anchor>//api/name/recipientId</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINMessageDeliveryInfo/recipientId</TokenIdentifier>
+			<Abstract type="html">The identifier of the recipient</Abstract>
+			<DeclaredIn>SINMessageDeliveryInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *recipientId</Declaration>
+			
+			
+			<Anchor>//api/name/recipientId</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageDeliveryInfo/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">Server-side-based timestamp</Abstract>
+			<DeclaredIn>SINMessageDeliveryInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSDate *timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageDeliveryInfo/timestamp</TokenIdentifier>
+			<Abstract type="html">Server-side-based timestamp</Abstract>
+			<DeclaredIn>SINMessageDeliveryInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSDate *timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINMessageDeliveryInfo/timestamp</TokenIdentifier>
+			<Abstract type="html">Server-side-based timestamp</Abstract>
+			<DeclaredIn>SINMessageDeliveryInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSDate *timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINAudioController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINAudioController</TokenIdentifier>
+			<Abstract type="html">The SINAudioController provides methods for controlling audio related
+functionality, e.g. enabling the speaker, muting the microphone, and
+playing sound files.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the audio controller.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINAudioControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINAudioControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioController/delegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the audio controller.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINAudioControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINAudioControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINAudioController/delegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the audio controller.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINAudioControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINAudioControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioController/mute</TokenIdentifier>
+			<Abstract type="html">Mute the microphone.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+			<Declaration>- (void)mute</Declaration>
+			
+			
+			<Anchor>//api/name/mute</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioController/unmute</TokenIdentifier>
+			<Abstract type="html">Unmute the microphone.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+			<Declaration>- (void)unmute</Declaration>
+			
+			
+			<Anchor>//api/name/unmute</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioController/enableSpeaker</TokenIdentifier>
+			<Abstract type="html">Route the call audio through the speaker.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINCallDelegate/callDidEstablish:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enableSpeaker</Declaration>
+			
+			
+			<Anchor>//api/name/enableSpeaker</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioController/disableSpeaker</TokenIdentifier>
+			<Abstract type="html">Route the call audio through the handset earpiece.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINCallDelegate/callDidEstablish:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)disableSpeaker</Declaration>
+			
+			
+			<Anchor>//api/name/disableSpeaker</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioController/startPlayingSoundFile:loop:</TokenIdentifier>
+			<Abstract type="html">Play a sound file, for the purpose of playing ringtones, etc.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+			<Declaration>- (void)startPlayingSoundFile:(NSString *)path loop:(BOOL)loop</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">Full path for the sound file to play.</Abstract>
+				</Parameter><Parameter>
+					<Name>loop</Name>
+					<Abstract type="html">Specifies whether the sound should loop or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startPlayingSoundFile:loop:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioController/stopPlayingSoundFile</TokenIdentifier>
+			<Abstract type="html">Stop playing the sound file.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+			<Declaration>- (void)stopPlayingSoundFile</Declaration>
+			
+			
+			<Anchor>//api/name/stopPlayingSoundFile</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

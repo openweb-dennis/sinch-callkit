@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINClientDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINClientDelegate</TokenIdentifier>
+			<Abstract type="html">The delegate of a SINClient object must adopt the SINClientDelegate
+protocol. The required methods handle client state changes and the
+optional log method allows the delegate to log messages from the
+underlying calling functionality.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidStart:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the client started the calling functionality.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)clientDidStart:(id&lt;SINClient&gt;)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">The client informing the delegate that the calling
+functionality started successfully.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/clientDidStart:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidFail:error:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that a client failure occurred.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)clientDidFail:(id&lt;SINClient&gt;)client error:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">The client informing the delegate that it
+failed to start or start listening.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error object that describes the problem.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/clientDidFail:error:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidStop:</TokenIdentifier>
+			<Abstract type="html">DEPRECATED. Do not use.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+			<Declaration>- (void)clientDidStop:(id&lt;SINClient&gt;)client</Declaration>
+			
+			
+			<Anchor>//api/name/clientDidStop:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/client:requiresRegistrationCredentials:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that it is required to provide additional registration
+credentials.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClientRegistration</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)client:(id&lt;SINClient&gt;)client requiresRegistrationCredentials:(id&lt;SINClientRegistration&gt;)registrationCallback</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">The client informing the delegate that it requires
+additional registration details.</Abstract>
+				</Parameter><Parameter>
+					<Name>registrationCallback</Name>
+					<Abstract type="html">The callback object that is to be called
+when registration credentials have been fetched.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/client:requiresRegistrationCredentials:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/client:logMessage:area:severity:timestamp:</TokenIdentifier>
+			<Abstract type="html">The delegate object can choose to subscribe to log messages from
+the underlying calling functionality by implementing this method.</Abstract>
+			<DeclaredIn>SINClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)client:(id&lt;SINClient&gt;)client logMessage:(NSString *)message area:(NSString *)area severity:(SINLogSeverity)severity timestamp:(NSDate *)timestamp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">The client that the log messages are coming from.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message that is being logged.</Abstract>
+				</Parameter><Parameter>
+					<Name>area</Name>
+					<Abstract type="html">The area that the log message relates to.</Abstract>
+				</Parameter><Parameter>
+					<Name>severity</Name>
+					<Abstract type="html">The severity level of the log message. It may be one of
+the following:
+
+- SINLogSeverityTrace
+- SINLogSeverityInfo
+- SINLogSeverityWarn
+- SINLogSeverityCritical</Abstract>
+				</Parameter><Parameter>
+					<Name>timestamp</Name>
+					<Abstract type="html">The time when the message was logged.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/client:logMessage:area:severity:timestamp:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

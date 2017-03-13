@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINCallNotificationResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINCallNotificationResult</TokenIdentifier>
+			<Abstract type="html">SINCallNotificationResult is used to indicate the result of calling the methods
+[SINClient relayLocalNotification:] and
+[SINClient relayRemotePushNotificationPayload:]
+, when the Sinch-specific payload in the notification represents an incoming
+call.</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallNotificationResult/setIsTimedOut:</TokenIdentifier>
+			<Abstract type="html">Indicates whether the notification has timed out or not.</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) BOOL isTimedOut</Declaration>
+			
+			
+			<Anchor>//api/name/isTimedOut</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallNotificationResult/isTimedOut</TokenIdentifier>
+			<Abstract type="html">Indicates whether the notification has timed out or not.</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) BOOL isTimedOut</Declaration>
+			
+			
+			<Anchor>//api/name/isTimedOut</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallNotificationResult/isTimedOut</TokenIdentifier>
+			<Abstract type="html">Indicates whether the notification has timed out or not.</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) BOOL isTimedOut</Declaration>
+			
+			
+			<Anchor>//api/name/isTimedOut</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallNotificationResult/setRemoteUserId:</TokenIdentifier>
+			<Abstract type="html">Identifier of the user from which the call represented by the notification originated.</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *remoteUserId</Declaration>
+			
+			
+			<Anchor>//api/name/remoteUserId</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallNotificationResult/remoteUserId</TokenIdentifier>
+			<Abstract type="html">Identifier of the user from which the call represented by the notification originated.</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *remoteUserId</Declaration>
+			
+			
+			<Anchor>//api/name/remoteUserId</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallNotificationResult/remoteUserId</TokenIdentifier>
+			<Abstract type="html">Identifier of the user from which the call represented by the notification originated.</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *remoteUserId</Declaration>
+			
+			
+			<Anchor>//api/name/remoteUserId</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallNotificationResult/setCallId:</TokenIdentifier>
+			<Abstract type="html">A unique identifier pertaining to the call</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *callId</Declaration>
+			
+			
+			<Anchor>//api/name/callId</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallNotificationResult/callId</TokenIdentifier>
+			<Abstract type="html">A unique identifier pertaining to the call</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *callId</Declaration>
+			
+			
+			<Anchor>//api/name/callId</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallNotificationResult/callId</TokenIdentifier>
+			<Abstract type="html">A unique identifier pertaining to the call</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *callId</Declaration>
+			
+			
+			<Anchor>//api/name/callId</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallNotificationResult/setVideoOffered:</TokenIdentifier>
+			<Abstract type="html">Hint that indicates if video is offered in the call.</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isVideoOffered) BOOL videoOffered</Declaration>
+			
+			
+			<Anchor>//api/name/videoOffered</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallNotificationResult/isVideoOffered</TokenIdentifier>
+			<Abstract type="html">Hint that indicates if video is offered in the call.</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isVideoOffered) BOOL videoOffered</Declaration>
+			
+			
+			<Anchor>//api/name/videoOffered</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallNotificationResult/videoOffered</TokenIdentifier>
+			<Abstract type="html">Hint that indicates if video is offered in the call.</Abstract>
+			<DeclaredIn>SINCallNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isVideoOffered) BOOL videoOffered</Declaration>
+			
+			
+			<Anchor>//api/name/videoOffered</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

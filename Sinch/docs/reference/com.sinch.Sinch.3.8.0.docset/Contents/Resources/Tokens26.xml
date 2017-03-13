@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINNotificationResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINNotificationResult</TokenIdentifier>
+			<Abstract type="html">SINNotificationResult is used to indicate the result of calling the methods
+[SINClient relayLocalNotification:] and
+[SINClient relayRemotePushNotificationPayload:] .</Abstract>
+			<DeclaredIn>SINNotificationResult.h</DeclaredIn>
+            
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINNotificationResult/setIsValid:</TokenIdentifier>
+			<Abstract type="html">Indicates whether the notification is valid or not.</Abstract>
+			<DeclaredIn>SINNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) BOOL isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINNotificationResult/isValid</TokenIdentifier>
+			<Abstract type="html">Indicates whether the notification is valid or not.</Abstract>
+			<DeclaredIn>SINNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) BOOL isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINNotificationResult/isValid</TokenIdentifier>
+			<Abstract type="html">Indicates whether the notification is valid or not.</Abstract>
+			<DeclaredIn>SINNotificationResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) BOOL isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINNotificationResult/isCall</TokenIdentifier>
+			<Abstract type="html">Indicates whether the notification is call related</Abstract>
+			<DeclaredIn>SINNotificationResult.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isCall</Declaration>
+			
+			
+			<Anchor>//api/name/isCall</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINNotificationResult/callResult</TokenIdentifier>
+			<Abstract type="html">If the notification is call related (isCall is true), callResult contains the notification result</Abstract>
+			<DeclaredIn>SINNotificationResult.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;SINCallNotificationResult&gt;)callResult</Declaration>
+			
+			
+			<Anchor>//api/name/callResult</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINNotificationResult/isMessage</TokenIdentifier>
+			<Abstract type="html">Indicates whether the notification is message related</Abstract>
+			<DeclaredIn>SINNotificationResult.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isMessage</Declaration>
+			
+			
+			<Anchor>//api/name/isMessage</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINNotificationResult/messageResult</TokenIdentifier>
+			<Abstract type="html">If the notification is message related (isMessage is true), messageResult contains the notification result</Abstract>
+			<DeclaredIn>SINNotificationResult.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;SINMessageNotificationResult&gt;)messageResult</Declaration>
+			
+			
+			<Anchor>//api/name/messageResult</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

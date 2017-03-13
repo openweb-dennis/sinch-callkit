@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/SINCallState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SINCallState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+            
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallStateInitiating</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallStateInitiating</Declaration>
+            
+            <DeclaredIn>SINCall.h</DeclaredIn>
+            
+            <NodeRef refid="32"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallStateProgressing</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallStateProgressing</Declaration>
+            
+            <DeclaredIn>SINCall.h</DeclaredIn>
+            
+            <NodeRef refid="32"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallStateEstablished</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallStateEstablished</Declaration>
+            
+            <DeclaredIn>SINCall.h</DeclaredIn>
+            
+            <NodeRef refid="32"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallStateEnded</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallStateEnded</Declaration>
+            
+            <DeclaredIn>SINCall.h</DeclaredIn>
+            
+            <NodeRef refid="32"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

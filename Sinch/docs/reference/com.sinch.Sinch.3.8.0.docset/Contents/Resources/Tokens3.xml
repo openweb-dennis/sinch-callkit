@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Sinch.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Sinch</TokenIdentifier>
+			<Abstract type="html">The Sinch class is used to instantiate a SINClient.</Abstract>
+			<DeclaredIn>Sinch.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Sinch/clientWithApplicationKey:environmentHost:userId:</TokenIdentifier>
+			<Abstract type="html">Instantiate a new client.</Abstract>
+			<DeclaredIn>Sinch.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClientRegistration</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id&lt;SINClient&gt;)clientWithApplicationKey:(NSString *)applicationKey environmentHost:(NSString *)environmentHost userId:(NSString *)userId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>applicationKey</Name>
+					<Abstract type="html">Application key identifying the application.</Abstract>
+				</Parameter><Parameter>
+					<Name>environmentHost</Name>
+					<Abstract type="html">Host for base URL for the Sinch API environment
+to be used. E.g. &apos;sandbox.sinch.com&apos;</Abstract>
+				</Parameter><Parameter>
+					<Name>userId</Name>
+					<Abstract type="html">ID of the local user</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly instantiated client.</Abstract></ReturnValue>
+			<Anchor>//api/name/clientWithApplicationKey:environmentHost:userId:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Sinch/clientWithApplicationKey:applicationSecret:environmentHost:userId:</TokenIdentifier>
+			<Abstract type="html">Instantiate a new client.</Abstract>
+			<DeclaredIn>Sinch.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id&lt;SINClient&gt;)clientWithApplicationKey:(NSString *)applicationKey applicationSecret:(NSString *)applicationSecret environmentHost:(NSString *)environmentHost userId:(NSString *)userId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>applicationKey</Name>
+					<Abstract type="html">Application key identifying the application.</Abstract>
+				</Parameter><Parameter>
+					<Name>applicationSecret</Name>
+					<Abstract type="html">Application secret bound to application key.</Abstract>
+				</Parameter><Parameter>
+					<Name>environmentHost</Name>
+					<Abstract type="html">Host for base URL for the Sinch API environment
+to be used. E.g &apos;sandbox.sinch.com&apos;</Abstract>
+				</Parameter><Parameter>
+					<Name>userId</Name>
+					<Abstract type="html">ID of the local user</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly instantiated client.
+
+This method should be used if user-registration and authorization with Sinch
+is to be handled completely by the app (without additional involvement
+of a backend-service providing additional credentials to the application.)</Abstract></ReturnValue>
+			<Anchor>//api/name/clientWithApplicationKey:applicationSecret:environmentHost:userId:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Sinch/clientWithApplicationKey:environmentHost:userId:cli:</TokenIdentifier>
+			<Abstract type="html">Instantiate a new client with a CLI (may be used for PSTN-terminated calls).</Abstract>
+			<DeclaredIn>Sinch.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClientRegistration</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id&lt;SINClient&gt;)clientWithApplicationKey:(NSString *)applicationKey environmentHost:(NSString *)environmentHost userId:(NSString *)userId cli:(NSString *)cli</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>applicationKey</Name>
+					<Abstract type="html">Application key identifying the application.</Abstract>
+				</Parameter><Parameter>
+					<Name>environmentHost</Name>
+					<Abstract type="html">Host for base URL for the Sinch API environment
+to be used. E.g. &apos;sandbox.sinch.com&apos;</Abstract>
+				</Parameter><Parameter>
+					<Name>userId</Name>
+					<Abstract type="html">ID of the local user</Abstract>
+				</Parameter><Parameter>
+					<Name>cli</Name>
+					<Abstract type="html">Caller-ID when terminating calls to PSTN. Must be a valid phone
+number.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly instantiated client.</Abstract></ReturnValue>
+			<Anchor>//api/name/clientWithApplicationKey:environmentHost:userId:cli:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Sinch/clientWithApplicationKey:applicationSecret:environmentHost:userId:cli:</TokenIdentifier>
+			<Abstract type="html">Instantiate a new client with a CLI (may be used for PSTN-terminated calls).</Abstract>
+			<DeclaredIn>Sinch.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id&lt;SINClient&gt;)clientWithApplicationKey:(NSString *)applicationKey applicationSecret:(NSString *)applicationSecret environmentHost:(NSString *)environmentHost userId:(NSString *)userId cli:(NSString *)cli</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>applicationKey</Name>
+					<Abstract type="html">Application key identifying the application.</Abstract>
+				</Parameter><Parameter>
+					<Name>applicationSecret</Name>
+					<Abstract type="html">Application secret bound to application key.</Abstract>
+				</Parameter><Parameter>
+					<Name>environmentHost</Name>
+					<Abstract type="html">Host for base URL for the Sinch API environment
+to be used. E.g &apos;sandbox.sinch.com&apos;</Abstract>
+				</Parameter><Parameter>
+					<Name>userId</Name>
+					<Abstract type="html">ID of the local user</Abstract>
+				</Parameter><Parameter>
+					<Name>cli</Name>
+					<Abstract type="html">Caller-ID when terminating calls to PSTN. Must be a valid phone
+number.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly instantiated client.
+
+This method should be used if user-registration and authorization with Sinch
+is to be handled completely by the app (without additional involvement
+of a backend-service providing additional credentials to the application.)</Abstract></ReturnValue>
+			<Anchor>//api/name/clientWithApplicationKey:applicationSecret:environmentHost:userId:cli:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Sinch/managedPushWithAPSEnvironment:</TokenIdentifier>
+			<Abstract type="html">Instantiate a new SINManagedPush instance to enable Push Notifications
+managed by the Sinch SDK and platform. When using managed push notifications,
+push notifications will be sent by the Sinch platform provided that Apple
+Push Notification Certificates for your application have been uploaded to Sinch.</Abstract>
+			<DeclaredIn>Sinch.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/SINAPSEnvironment</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id&lt;SINManagedPush&gt;)managedPushWithAPSEnvironment:(SINAPSEnvironment)apsEnvironment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>apsEnvironment</Name>
+					<Abstract type="html">Specification of which Apple Push Notification Service environment
+the application is bound to (via code signing and Provisioning Profile).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/managedPushWithAPSEnvironment:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Sinch/version</TokenIdentifier>
+			<Abstract type="html">Returns the Sinch SDK version.</Abstract>
+			<DeclaredIn>Sinch.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

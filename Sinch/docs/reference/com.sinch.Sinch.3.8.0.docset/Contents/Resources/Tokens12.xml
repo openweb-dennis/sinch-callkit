@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINCallDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINCallDelegate</TokenIdentifier>
+			<Abstract type="html">The delegate of a SINCall object must adopt the SINCallDelegate
+protocol. The required methods handle call state changes.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDelegate/callDidEnd:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the call ended.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCall</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)callDidEnd:(id&lt;SINCall&gt;)call</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>call</Name>
+					<Abstract type="html">The call that ended.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/callDidEnd:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDelegate/callDidProgress:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the outgoing call is progressing and a progress tone can be played.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCall</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)callDidProgress:(id&lt;SINCall&gt;)call</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>call</Name>
+					<Abstract type="html">The outgoing call to the client on the other end.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/callDidProgress:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDelegate/callDidEstablish:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the call was established.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCall</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)callDidEstablish:(id&lt;SINCall&gt;)call</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>call</Name>
+					<Abstract type="html">The call that was established.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/callDidEstablish:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDelegate/call:shouldSendPushNotifications:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the callee device can&apos;t be reached directly,
+and it is required to wake up the callee&apos;s application with an
+Apple Push Notification (APN).</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINPushPair</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCall</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intf/SINClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)call:(id&lt;SINCall&gt;)call shouldSendPushNotifications:(NSArray *)pushPairs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>call</Name>
+					<Abstract type="html">The call that requires the delegate to send an
+Apple Push Notification (APN) to the callee device.</Abstract>
+				</Parameter><Parameter>
+					<Name>pushPairs</Name>
+					<Abstract type="html">Array of SINPushPair. Each pair identififies a certain
+device that should be requested to be woken up via
+Apple Push Notification.
+
+The push data entries are equal to what the receiver&apos;s
+application passed to the method
+[SINClient registerPushNotificationData:].</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/call:shouldSendPushNotifications:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDelegate/callDidAddVideoTrack:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that a video track has been added to the call.
+(A delegate can use SINVideoController to manage rendering views.)</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINVideoController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)callDidAddVideoTrack:(id&lt;SINCall&gt;)call</Declaration>
+			
+			
+			<Anchor>//api/name/callDidAddVideoTrack:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINAudioControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINAudioControllerDelegate</TokenIdentifier>
+			<Abstract type="html">The delegate of a SINAudioController object must adopt the
+SINAudioControllerDelegate protocol. The methods handle audio
+related state changes.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioControllerDelegate/audioControllerMuted:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate that the microphone was muted.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINAudioController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)audioControllerMuted:(id&lt;SINAudioController&gt;)audioController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioController</Name>
+					<Abstract type="html">The audio controller associated with this delegate.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/audioControllerMuted:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioControllerDelegate/audioControllerUnmuted:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate that the microphone was unmuted.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINAudioController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)audioControllerUnmuted:(id&lt;SINAudioController&gt;)audioController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioController</Name>
+					<Abstract type="html">The audio controller associated with this delegate.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/audioControllerUnmuted:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioControllerDelegate/audioControllerSpeakerEnabled:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate that the speaker was enabled.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINAudioController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)audioControllerSpeakerEnabled:(id&lt;SINAudioController&gt;)audioController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioController</Name>
+					<Abstract type="html">The audio controller associated with this delegate.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/audioControllerSpeakerEnabled:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINAudioControllerDelegate/audioControllerSpeakerDisabled:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate that the speaker was disabled.</Abstract>
+			<DeclaredIn>SINAudioController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINAudioController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)audioControllerSpeakerDisabled:(id&lt;SINAudioController&gt;)audioController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioController</Name>
+					<Abstract type="html">The audio controller associated with this delegate.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/audioControllerSpeakerDisabled:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

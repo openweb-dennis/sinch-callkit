@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/SINCallEndCause.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SINCallEndCause</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallEndCauseNone</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallEndCauseNone</Declaration>
+            
+            <DeclaredIn>SINCallDetails.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallEndCauseTimeout</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallEndCauseTimeout</Declaration>
+            
+            <DeclaredIn>SINCallDetails.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallEndCauseDenied</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallEndCauseDenied</Declaration>
+            
+            <DeclaredIn>SINCallDetails.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallEndCauseNoAnswer</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallEndCauseNoAnswer</Declaration>
+            
+            <DeclaredIn>SINCallDetails.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallEndCauseError</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallEndCauseError</Declaration>
+            
+            <DeclaredIn>SINCallDetails.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallEndCauseHungUp</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallEndCauseHungUp</Declaration>
+            
+            <DeclaredIn>SINCallDetails.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallEndCauseCanceled</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallEndCauseCanceled</Declaration>
+            
+            <DeclaredIn>SINCallDetails.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallEndCauseOtherDeviceAnswered</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallEndCauseOtherDeviceAnswered</Declaration>
+            
+            <DeclaredIn>SINCallDetails.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

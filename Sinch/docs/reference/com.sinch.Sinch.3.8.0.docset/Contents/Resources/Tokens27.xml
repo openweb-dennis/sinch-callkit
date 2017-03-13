@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINPushPair.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINPushPair</TokenIdentifier>
+			<Abstract type="html">The SINPushPair contains push related information.</Abstract>
+			<DeclaredIn>SINPushPair.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINPushPair/setPushData:</TokenIdentifier>
+			<Abstract type="html">The push data to use when forwarding the push payload to a device. The push
+data is equal to the data passed to [SINClient registerPushNotificationData:].</Abstract>
+			<DeclaredIn>SINPushPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *pushData</Declaration>
+			
+			
+			<Anchor>//api/name/pushData</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINPushPair/pushData</TokenIdentifier>
+			<Abstract type="html">The push data to use when forwarding the push payload to a device. The push
+data is equal to the data passed to [SINClient registerPushNotificationData:].</Abstract>
+			<DeclaredIn>SINPushPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *pushData</Declaration>
+			
+			
+			<Anchor>//api/name/pushData</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINPushPair/pushData</TokenIdentifier>
+			<Abstract type="html">The push data to use when forwarding the push payload to a device. The push
+data is equal to the data passed to [SINClient registerPushNotificationData:].</Abstract>
+			<DeclaredIn>SINPushPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *pushData</Declaration>
+			
+			
+			<Anchor>//api/name/pushData</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINPushPair/setPushPayload:</TokenIdentifier>
+			<Abstract type="html">The push payload contains call/instant-message information encoded by
+the Sinch SDK. The payload should considered opaque to the
+application developer, and should be delivered to the callee/ recipient of
+an instant-message via appropriate push service, e.g. Apple Push Notification
+Service (APNS) or Google Cloud Messaging (GCM). Once received on the
+destination device, it should be passed to the
+Sinch via the method [SINClient relayRemotePushNotificationPayload:].</Abstract>
+			<DeclaredIn>SINPushPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *pushPayload</Declaration>
+			
+			
+			<Anchor>//api/name/pushPayload</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINPushPair/pushPayload</TokenIdentifier>
+			<Abstract type="html">The push payload contains call/instant-message information encoded by
+the Sinch SDK. The payload should considered opaque to the
+application developer, and should be delivered to the callee/ recipient of
+an instant-message via appropriate push service, e.g. Apple Push Notification
+Service (APNS) or Google Cloud Messaging (GCM). Once received on the
+destination device, it should be passed to the
+Sinch via the method [SINClient relayRemotePushNotificationPayload:].</Abstract>
+			<DeclaredIn>SINPushPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *pushPayload</Declaration>
+			
+			
+			<Anchor>//api/name/pushPayload</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINPushPair/pushPayload</TokenIdentifier>
+			<Abstract type="html">The push payload contains call/instant-message information encoded by
+the Sinch SDK. The payload should considered opaque to the
+application developer, and should be delivered to the callee/ recipient of
+an instant-message via appropriate push service, e.g. Apple Push Notification
+Service (APNS) or Google Cloud Messaging (GCM). Once received on the
+destination device, it should be passed to the
+Sinch via the method [SINClient relayRemotePushNotificationPayload:].</Abstract>
+			<DeclaredIn>SINPushPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *pushPayload</Declaration>
+			
+			
+			<Anchor>//api/name/pushPayload</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

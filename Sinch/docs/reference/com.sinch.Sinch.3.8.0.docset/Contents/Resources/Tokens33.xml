@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/SINLogSeverity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SINLogSeverity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SINLogSeverity.h</DeclaredIn>
+            
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINLogSeverityTrace</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINLogSeverityTrace</Declaration>
+            
+            <DeclaredIn>SINLogSeverity.h</DeclaredIn>
+            
+            <NodeRef refid="33"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINLogSeverityInfo</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINLogSeverityInfo</Declaration>
+            
+            <DeclaredIn>SINLogSeverity.h</DeclaredIn>
+            
+            <NodeRef refid="33"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINLogSeverityWarn</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINLogSeverityWarn</Declaration>
+            
+            <DeclaredIn>SINLogSeverity.h</DeclaredIn>
+            
+            <NodeRef refid="33"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINLogSeverityCritical</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINLogSeverityCritical</Declaration>
+            
+            <DeclaredIn>SINLogSeverity.h</DeclaredIn>
+            
+            <NodeRef refid="33"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

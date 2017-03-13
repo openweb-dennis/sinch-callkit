@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/SINAPSEnvironment.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SINAPSEnvironment</TokenIdentifier>
+			<Abstract type="html">SINAPSEnvironment is used to declare to which Apple Push Notification Service environment a device token is bound to.</Abstract>
+			<DeclaredIn>SINAPSEnvironment.h</DeclaredIn>
+            
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINAPSEnvironmentDevelopment</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINAPSEnvironmentDevelopment</Declaration>
+            
+            <DeclaredIn>SINAPSEnvironment.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINAPSEnvironmentProduction</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINAPSEnvironmentProduction</Declaration>
+            
+            <DeclaredIn>SINAPSEnvironment.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINVideoController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINVideoController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SINVideoController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINVideoController/setCaptureDevicePosition:</TokenIdentifier>
+			<Abstract type="html">Indicates the capture device position (front-facing or back-facing
+camera) currently in use. This property may be set to to change
+which capture device should be used.</Abstract>
+			<DeclaredIn>SINVideoController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readwrite) AVCaptureDevicePosition captureDevicePosition</Declaration>
+			
+			
+			<Anchor>//api/name/captureDevicePosition</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINVideoController/captureDevicePosition</TokenIdentifier>
+			<Abstract type="html">Indicates the capture device position (front-facing or back-facing
+camera) currently in use. This property may be set to to change
+which capture device should be used.</Abstract>
+			<DeclaredIn>SINVideoController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readwrite) AVCaptureDevicePosition captureDevicePosition</Declaration>
+			
+			
+			<Anchor>//api/name/captureDevicePosition</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINVideoController/captureDevicePosition</TokenIdentifier>
+			<Abstract type="html">Indicates the capture device position (front-facing or back-facing
+camera) currently in use. This property may be set to to change
+which capture device should be used.</Abstract>
+			<DeclaredIn>SINVideoController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readwrite) AVCaptureDevicePosition captureDevicePosition</Declaration>
+			
+			
+			<Anchor>//api/name/captureDevicePosition</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINVideoController/setDisableIdleTimerOnCapturing:</TokenIdentifier>
+			<Abstract type="html">Automatically set/unset UIApplication.idleTimerDisabled when video capturing is started / stopped.
+Default is YES.</Abstract>
+			<DeclaredIn>SINVideoController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL disableIdleTimerOnCapturing</Declaration>
+			
+			
+			<Anchor>//api/name/disableIdleTimerOnCapturing</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINVideoController/disableIdleTimerOnCapturing</TokenIdentifier>
+			<Abstract type="html">Automatically set/unset UIApplication.idleTimerDisabled when video capturing is started / stopped.
+Default is YES.</Abstract>
+			<DeclaredIn>SINVideoController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL disableIdleTimerOnCapturing</Declaration>
+			
+			
+			<Anchor>//api/name/disableIdleTimerOnCapturing</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINVideoController/disableIdleTimerOnCapturing</TokenIdentifier>
+			<Abstract type="html">Automatically set/unset UIApplication.idleTimerDisabled when video capturing is started / stopped.
+Default is YES.</Abstract>
+			<DeclaredIn>SINVideoController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL disableIdleTimerOnCapturing</Declaration>
+			
+			
+			<Anchor>//api/name/disableIdleTimerOnCapturing</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINVideoController/remoteView</TokenIdentifier>
+			<Abstract type="html">View into which the remote peer video stream is rendered.</Abstract>
+			<DeclaredIn>SINVideoController.h</DeclaredIn>
+			
+			<Declaration>- (UIView *)remoteView</Declaration>
+			
+			
+			<Anchor>//api/name/remoteView</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINVideoController/localView</TokenIdentifier>
+			<Abstract type="html">View into which the locally captured video stream is rendered.</Abstract>
+			<DeclaredIn>SINVideoController.h</DeclaredIn>
+			
+			<Declaration>- (UIView *)localView</Declaration>
+			
+			
+			<Anchor>//api/name/localView</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SINOutgoingMessage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SINOutgoingMessage</TokenIdentifier>
+			<Abstract type="html">SINOutgoingMessage should be used to create outgoing instant-messages.</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINOutgoingMessage/setMessageId:</TokenIdentifier>
+			<Abstract type="html">String that is used as an identifier for this particular message.</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *messageId</Declaration>
+			
+			
+			<Anchor>//api/name/messageId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINOutgoingMessage/messageId</TokenIdentifier>
+			<Abstract type="html">String that is used as an identifier for this particular message.</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *messageId</Declaration>
+			
+			
+			<Anchor>//api/name/messageId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINOutgoingMessage/messageId</TokenIdentifier>
+			<Abstract type="html">String that is used as an identifier for this particular message.</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *messageId</Declaration>
+			
+			
+			<Anchor>//api/name/messageId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINOutgoingMessage/setRecipientIds:</TokenIdentifier>
+			<Abstract type="html">Array of ids of the recipients of the message.</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *recipientIds</Declaration>
+			
+			
+			<Anchor>//api/name/recipientIds</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINOutgoingMessage/recipientIds</TokenIdentifier>
+			<Abstract type="html">Array of ids of the recipients of the message.</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *recipientIds</Declaration>
+			
+			
+			<Anchor>//api/name/recipientIds</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINOutgoingMessage/recipientIds</TokenIdentifier>
+			<Abstract type="html">Array of ids of the recipients of the message.</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *recipientIds</Declaration>
+			
+			
+			<Anchor>//api/name/recipientIds</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINOutgoingMessage/setText:</TokenIdentifier>
+			<Abstract type="html">Message body text</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINOutgoingMessage/text</TokenIdentifier>
+			<Abstract type="html">Message body text</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINOutgoingMessage/text</TokenIdentifier>
+			<Abstract type="html">Message body text</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINOutgoingMessage/setHeaders:</TokenIdentifier>
+			<Abstract type="html">Message headers</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINOutgoingMessage/headers</TokenIdentifier>
+			<Abstract type="html">Message headers</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINOutgoingMessage/headers</TokenIdentifier>
+			<Abstract type="html">Message headers</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SINOutgoingMessage/messageWithRecipient:text:</TokenIdentifier>
+			<Abstract type="html">Creates a new message with the specified recipient and message body.</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>+ (SINOutgoingMessage *)messageWithRecipient:(NSString *)recipientId text:(NSString *)text</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recipientId</Name>
+					<Abstract type="html">The indended recipient&apos;s id.</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">Message text</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/messageWithRecipient:text:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SINOutgoingMessage/messageWithRecipients:text:</TokenIdentifier>
+			<Abstract type="html">Creates a new message with the specified recipients and message body.</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>+ (SINOutgoingMessage *)messageWithRecipients:(NSArray *)recipientIds text:(NSString *)text</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recipientIds</Name>
+					<Abstract type="html">The indended recipients&apos; ids.</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">Message text</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/messageWithRecipients:text:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SINOutgoingMessage/messageWithMessage:</TokenIdentifier>
+			<Abstract type="html">Creates a SINOutgoingMessage from a SINMessage.</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>+ (SINOutgoingMessage *)messageWithMessage:(id&lt;SINMessage&gt;)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The original message</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new sendable message. This message will have the same contents
+as the previous message but with a new id.</Abstract></ReturnValue>
+			<Anchor>//api/name/messageWithMessage:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINOutgoingMessage/addHeaderWithValue:key:</TokenIdentifier>
+			<Abstract type="html">Add a message header</Abstract>
+			<DeclaredIn>SINOutgoingMessage.h</DeclaredIn>
+			
+			<Declaration>- (void)addHeaderWithValue:(NSString *)value key:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">Header value</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">Header key</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addHeaderWithValue:key:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINCallClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINCallClient</TokenIdentifier>
+			<Abstract type="html">SINCallClient provides the entry point to the calling functionality of the Sinch SDK.
+A SINCallClient can be acquired via SINClient.</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClient/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the call client.</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINCallClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClient/delegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the call client.</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINCallClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallClient/delegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the call client.</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallClientDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINCallClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClient/callUserWithId:</TokenIdentifier>
+			<Abstract type="html">Make a call to the user with the given id.</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidStart:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINCall&gt;)callUserWithId:(NSString *)userId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userId</Name>
+					<Abstract type="html">The application specific id of the user to call.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">SINCall Outgoing call</Abstract></ReturnValue>
+			<Anchor>//api/name/callUserWithId:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClient/callUserWithId:headers:</TokenIdentifier>
+			<Abstract type="html">Calls the user with the given id and the given headers.</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidStart:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINCall&gt;)callUserWithId:(NSString *)userId headers:(NSDictionary *)headers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userId</Name>
+					<Abstract type="html">The application specific id of the user to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>headers</Name>
+					<Abstract type="html">NSString key-value pairs to pass with the call.
+The total size of header keys + values (when encoded with NSUTF8StringEncoding)
+must not exceed 1024 bytes.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">SINCall Outgoing call</Abstract></ReturnValue>
+			<Anchor>//api/name/callUserWithId:headers:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClient/callUserVideoWithId:</TokenIdentifier>
+			<Abstract type="html">Make a video call to the user with the given id</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidStart:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINCall&gt;)callUserVideoWithId:(NSString *)userId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userId</Name>
+					<Abstract type="html">The application specific id of the user to call.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">SINCall Outgoing call</Abstract></ReturnValue>
+			<Anchor>//api/name/callUserVideoWithId:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClient/callUserVideoWithId:headers:</TokenIdentifier>
+			<Abstract type="html">Make a video call to the user with the given id and the give headers</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidStart:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINCall&gt;)callUserVideoWithId:(NSString *)userId headers:(NSDictionary *)headers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userId</Name>
+					<Abstract type="html">The application specific id of the user to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>headers</Name>
+					<Abstract type="html">NSString key-value pairs to pass with the call.
+The total size of header keys + values (when encoded with NSUTF8StringEncoding)
+must not exceed 1024 bytes.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">SINCall Outgoing call</Abstract></ReturnValue>
+			<Anchor>//api/name/callUserVideoWithId:headers:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClient/callPhoneNumber:</TokenIdentifier>
+			<Abstract type="html">Calls a phone number and terminates the call to the PSTN-network (Publicly Switched
+Telephone Network).</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidStart:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINCall&gt;)callPhoneNumber:(NSString *)phoneNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>phoneNumber</Name>
+					<Abstract type="html">The phone number to call.
+The phone number should be given according to E.164 number formatting
+(http://en.wikipedia.org/wiki/E.164) and should be prefixed with a &apos;+&apos;.
+E.g. to call the US phone number 415 555 0101, it should be specified as
+&quot;+14155550101&quot;, where the &apos;+&apos; is the required prefix and the US country
+code &apos;1&apos; added before the local subscriber number.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">SINCall Outgoing call</Abstract></ReturnValue>
+			<Anchor>//api/name/callPhoneNumber:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClient/callPhoneNumber:headers:</TokenIdentifier>
+			<Abstract type="html">Calls a phone number and terminate the call to the PSTN-network (Publicly Switched
+Telephone Network).</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidStart:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINCall&gt;)callPhoneNumber:(NSString *)phoneNumber headers:(NSDictionary *)headers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>phoneNumber</Name>
+					<Abstract type="html">The phone number to call.
+The phone number should be given according to E.164 number formatting
+(http://en.wikipedia.org/wiki/E.164) and should be prefixed with a &apos;+&apos;.
+E.g. to call the US phone number 415 555 0101, it should be specified as
+&quot;+14155550101&quot;, where the &apos;+&apos; is the required prefix and the US country
+code &apos;1&apos; added before the local subscriber number.</Abstract>
+				</Parameter><Parameter>
+					<Name>headers</Name>
+					<Abstract type="html">NSString key-value pairs to pass with the call.
+The total size of header keys + values (when encoded with NSUTF8StringEncoding)
+must not exceed 1024 bytes.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">SINCall Outgoing call</Abstract></ReturnValue>
+			<Anchor>//api/name/callPhoneNumber:headers:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClient/callConferenceWithId:</TokenIdentifier>
+			<Abstract type="html">Calls the conference with the given id.</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidStart:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINCall&gt;)callConferenceWithId:(NSString *)conferenceId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conferenceId</Name>
+					<Abstract type="html">The application specific id of the conference to call.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">SINCall Outgoing call</Abstract></ReturnValue>
+			<Anchor>//api/name/callConferenceWithId:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClient/callConferenceWithId:headers:</TokenIdentifier>
+			<Abstract type="html">Calls the conference with the given id and the given headers.</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/SINClientDelegate/clientDidStart:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id&lt;SINCall&gt;)callConferenceWithId:(NSString *)conferenceId headers:(NSDictionary *)headers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conferenceId</Name>
+					<Abstract type="html">The application specific id of the conference to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>headers</Name>
+					<Abstract type="html">NSString key-value pairs to pass with the call.
+The total size of header keys + values (when encoded with NSUTF8StringEncoding)
+must not exceed 1024 bytes.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">SINCall Outgoing call</Abstract></ReturnValue>
+			<Anchor>//api/name/callConferenceWithId:headers:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

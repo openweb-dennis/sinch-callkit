@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIView+SINUIViewFullscreenAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIView(SINUIViewFullscreenAdditions)</TokenIdentifier>
+			<Abstract type="html">SINUIViewFullscreenAdditions are helper methods (implemented as Objective-C
+category methods) to make views go to full screen mode (and back to it&apos;s
+previous state)</Abstract>
+			<DeclaredIn>SINUIView+Fullscreen.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/sin_isFullscreen</TokenIdentifier>
+			<Abstract type="html">YES if view is in full screen mode or is about to be (in animation transition).</Abstract>
+			<DeclaredIn>SINUIView+Fullscreen.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sin_isFullscreen</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if view is in full screen mode or is about to be (in animation transition).</Abstract></ReturnValue>
+			<Anchor>//api/name/sin_isFullscreen</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/sin_enableFullscreen:</TokenIdentifier>
+			<Abstract type="html">Make view go into full screen mode.</Abstract>
+			<DeclaredIn>SINUIView+Fullscreen.h</DeclaredIn>
+			
+			<Declaration>- (void)sin_enableFullscreen:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/sin_enableFullscreen:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIView/sin_disableFullscreen:</TokenIdentifier>
+			<Abstract type="html">Make view go back to it&apos;s original state before full screen mode was enabled.</Abstract>
+			<DeclaredIn>SINUIView+Fullscreen.h</DeclaredIn>
+			
+			<Declaration>- (void)sin_disableFullscreen:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/sin_disableFullscreen:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

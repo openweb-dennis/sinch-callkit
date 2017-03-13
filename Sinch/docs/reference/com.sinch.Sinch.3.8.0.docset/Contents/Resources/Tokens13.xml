@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINCallDetails.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINCallDetails</TokenIdentifier>
+			<Abstract type="html">The SINCallDetails holds metadata about a call (SINCall.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/setStartedTime:</TokenIdentifier>
+			<Abstract type="html">The start time of the call.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDate *startedTime</Declaration>
+			
+			
+			<Anchor>//api/name/startedTime</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/startedTime</TokenIdentifier>
+			<Abstract type="html">The start time of the call.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDate *startedTime</Declaration>
+			
+			
+			<Anchor>//api/name/startedTime</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallDetails/startedTime</TokenIdentifier>
+			<Abstract type="html">The start time of the call.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDate *startedTime</Declaration>
+			
+			
+			<Anchor>//api/name/startedTime</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/setEstablishedTime:</TokenIdentifier>
+			<Abstract type="html">The time at which the call was established, if it reached established state.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDate *establishedTime</Declaration>
+			
+			
+			<Anchor>//api/name/establishedTime</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/establishedTime</TokenIdentifier>
+			<Abstract type="html">The time at which the call was established, if it reached established state.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDate *establishedTime</Declaration>
+			
+			
+			<Anchor>//api/name/establishedTime</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallDetails/establishedTime</TokenIdentifier>
+			<Abstract type="html">The time at which the call was established, if it reached established state.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDate *establishedTime</Declaration>
+			
+			
+			<Anchor>//api/name/establishedTime</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/setEndedTime:</TokenIdentifier>
+			<Abstract type="html">The end time of the call.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDate *endedTime</Declaration>
+			
+			
+			<Anchor>//api/name/endedTime</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/endedTime</TokenIdentifier>
+			<Abstract type="html">The end time of the call.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDate *endedTime</Declaration>
+			
+			
+			<Anchor>//api/name/endedTime</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallDetails/endedTime</TokenIdentifier>
+			<Abstract type="html">The end time of the call.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSDate *endedTime</Declaration>
+			
+			
+			<Anchor>//api/name/endedTime</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/setEndCause:</TokenIdentifier>
+			<Abstract type="html">Holds the cause of why a call ended, after it has ended. It may be one
+of the following:</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) SINCallEndCause endCause</Declaration>
+			
+			
+			<Anchor>//api/name/endCause</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/endCause</TokenIdentifier>
+			<Abstract type="html">Holds the cause of why a call ended, after it has ended. It may be one
+of the following:</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) SINCallEndCause endCause</Declaration>
+			
+			
+			<Anchor>//api/name/endCause</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallDetails/endCause</TokenIdentifier>
+			<Abstract type="html">Holds the cause of why a call ended, after it has ended. It may be one
+of the following:</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) SINCallEndCause endCause</Declaration>
+			
+			
+			<Anchor>//api/name/endCause</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/setError:</TokenIdentifier>
+			<Abstract type="html">If the end cause is error, then this property contains an error object
+that describes the error.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/error</TokenIdentifier>
+			<Abstract type="html">If the end cause is error, then this property contains an error object
+that describes the error.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallDetails/error</TokenIdentifier>
+			<Abstract type="html">If the end cause is error, then this property contains an error object
+that describes the error.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/setApplicationStateWhenReceived:</TokenIdentifier>
+			<Abstract type="html">The application state when the call was received.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UIApplicationState applicationStateWhenReceived</Declaration>
+			
+			
+			<Anchor>//api/name/applicationStateWhenReceived</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/applicationStateWhenReceived</TokenIdentifier>
+			<Abstract type="html">The application state when the call was received.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UIApplicationState applicationStateWhenReceived</Declaration>
+			
+			
+			<Anchor>//api/name/applicationStateWhenReceived</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallDetails/applicationStateWhenReceived</TokenIdentifier>
+			<Abstract type="html">The application state when the call was received.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UIApplicationState applicationStateWhenReceived</Declaration>
+			
+			
+			<Anchor>//api/name/applicationStateWhenReceived</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/setVideoOffered:</TokenIdentifier>
+			<Abstract type="html">Hint that indicates if video is offered in the call.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isVideoOffered) BOOL videoOffered</Declaration>
+			
+			
+			<Anchor>//api/name/videoOffered</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallDetails/isVideoOffered</TokenIdentifier>
+			<Abstract type="html">Hint that indicates if video is offered in the call.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isVideoOffered) BOOL videoOffered</Declaration>
+			
+			
+			<Anchor>//api/name/videoOffered</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCallDetails/videoOffered</TokenIdentifier>
+			<Abstract type="html">Hint that indicates if video is offered in the call.</Abstract>
+			<DeclaredIn>SINCallDetails.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isVideoOffered) BOOL videoOffered</Declaration>
+			
+			
+			<Anchor>//api/name/videoOffered</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SINClientDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Sinch </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Sinch</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/client:logMessage:area:severity:timestamp:">- client:logMessage:area:severity:timestamp:</option>
+		
+		<option value="//api/name/client:requiresRegistrationCredentials:">- client:requiresRegistrationCredentials:</option>
+		
+		<option value="//api/name/clientDidFail:error:">- clientDidFail:error:</option>
+		
+		<option value="//api/name/clientDidStart:">- clientDidStart:</option>
+		
+		<option value="//api/name/clientDidStop:">- clientDidStop:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SINClientDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SINClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The delegate of a SINClient object must adopt the SINClientDelegate
+protocol. The required methods handle client state changes and the
+optional log method allows the delegate to log messages from the
+underlying calling functionality.</p>
+
+<p>When an incoming call has been received,
+[SINClientDelegate client:didReceiveIncomingCall:] is called.
+The delegate of the incoming call object should be set at this time.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/clientDidStart:" title="clientDidStart:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clientDidStart:">&ndash;&nbsp;clientDidStart:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells the delegate that the client started the calling functionality.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clientDidStart:(id&lt;SINClient&gt;)<em>client</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The client informing the delegate that the calling
+functionality started successfully.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINClient.html">SINClient</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clientDidFail:error:" title="clientDidFail:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clientDidFail:error:">&ndash;&nbsp;clientDidFail:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells the delegate that a client failure occurred.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clientDidFail:(id&lt;SINClient&gt;)<em>client</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The client informing the delegate that it
+failed to start or start listening.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error object that describes the problem.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINClient.html">SINClient</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clientDidStop:" title="clientDidStop:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clientDidStop:">&ndash;&nbsp;clientDidStop:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>DEPRECATED. Do not use.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clientDidStop:(id&lt;SINClient&gt;)<em>client</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:requiresRegistrationCredentials:" title="client:requiresRegistrationCredentials:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:requiresRegistrationCredentials:">&ndash;&nbsp;client:requiresRegistrationCredentials:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells the delegate that it is required to provide additional registration
+credentials.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(id&lt;SINClient&gt;)<em>client</em> requiresRegistrationCredentials:(id&lt;SINClientRegistration&gt;)<em>registrationCallback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The client informing the delegate that it requires
+additional registration details.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>registrationCallback</code></th>
+						<td><p>The callback object that is to be called
+when registration credentials have been fetched.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINClientRegistration.html">SINClientRegistration</a></p></code></li>
+					
+					<li><code><p><a href="../Protocols/SINClient.html">SINClient</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/client:logMessage:area:severity:timestamp:" title="client:logMessage:area:severity:timestamp:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/client:logMessage:area:severity:timestamp:">&ndash;&nbsp;client:logMessage:area:severity:timestamp:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The delegate object can choose to subscribe to log messages from
+the underlying calling functionality by implementing this method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)client:(id&lt;SINClient&gt;)<em>client</em> logMessage:(NSString *)<em>message</em> area:(NSString *)<em>area</em> severity:(SINLogSeverity)<em>severity</em> timestamp:(NSDate *)<em>timestamp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The client that the log messages are coming from.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message that is being logged.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>area</code></th>
+						<td><p>The area that the log message relates to.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>severity</code></th>
+						<td><p>The severity level of the log message. It may be one of
+the following:</p>
+
+<ul>
+<li><code>SINLogSeverityTrace</code></li>
+<li><code>SINLogSeverityInfo</code></li>
+<li><code>SINLogSeverityWarn</code></li>
+<li><code>SINLogSeverityCritical</code></li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timestamp</code></th>
+						<td><p>The time when the message was logged.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The easiest way to log the messages is to simply write them to
+the device console using NSLog:</p>
+
+<p><code>NSLog(@"[%@] %u %@", timestamp, severity, message);</code></p>
+
+<p><em>Caution:</em> Only log messages with severity level <code>SINLogSeverityWarn</code>
+or higher to the console in release builds, to avoid flooding the
+device console with debugging messages.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINClient.html">SINClient</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Sinch. All rights reserved. Updated: 2015-11-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINCall.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINCall</TokenIdentifier>
+			<Abstract type="html">The SINCall represents a call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINCallDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/delegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINCallDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCall/delegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;SINCallDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/setCallId:</TokenIdentifier>
+			<Abstract type="html">String that is used as an identifier for this particular call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *callId</Declaration>
+			
+			
+			<Anchor>//api/name/callId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/callId</TokenIdentifier>
+			<Abstract type="html">String that is used as an identifier for this particular call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *callId</Declaration>
+			
+			
+			<Anchor>//api/name/callId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCall/callId</TokenIdentifier>
+			<Abstract type="html">String that is used as an identifier for this particular call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *callId</Declaration>
+			
+			
+			<Anchor>//api/name/callId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/setRemoteUserId:</TokenIdentifier>
+			<Abstract type="html">The id of the remote participant in the call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *remoteUserId</Declaration>
+			
+			
+			<Anchor>//api/name/remoteUserId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/remoteUserId</TokenIdentifier>
+			<Abstract type="html">The id of the remote participant in the call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *remoteUserId</Declaration>
+			
+			
+			<Anchor>//api/name/remoteUserId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCall/remoteUserId</TokenIdentifier>
+			<Abstract type="html">The id of the remote participant in the call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *remoteUserId</Declaration>
+			
+			
+			<Anchor>//api/name/remoteUserId</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/setDetails:</TokenIdentifier>
+			<Abstract type="html">Metadata about a call, such as start time.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallDetails</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly, strong) id&lt;SINCallDetails&gt; details</Declaration>
+			
+			
+			<Anchor>//api/name/details</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/details</TokenIdentifier>
+			<Abstract type="html">Metadata about a call, such as start time.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallDetails</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly, strong) id&lt;SINCallDetails&gt; details</Declaration>
+			
+			
+			<Anchor>//api/name/details</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCall/details</TokenIdentifier>
+			<Abstract type="html">Metadata about a call, such as start time.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallDetails</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly, strong) id&lt;SINCallDetails&gt; details</Declaration>
+			
+			
+			<Anchor>//api/name/details</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/setState:</TokenIdentifier>
+			<Abstract type="html">The state the call is currently in. It may be one of the following:</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) SINCallState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/state</TokenIdentifier>
+			<Abstract type="html">The state the call is currently in. It may be one of the following:</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) SINCallState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCall/state</TokenIdentifier>
+			<Abstract type="html">The state the call is currently in. It may be one of the following:</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) SINCallState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/setDirection:</TokenIdentifier>
+			<Abstract type="html">The direction of the call. It may be one of the following:</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) SINCallDirection direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/direction</TokenIdentifier>
+			<Abstract type="html">The direction of the call. It may be one of the following:</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) SINCallDirection direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCall/direction</TokenIdentifier>
+			<Abstract type="html">The direction of the call. It may be one of the following:</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) SINCallDirection direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/setHeaders:</TokenIdentifier>
+			<Abstract type="html">Call headers.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/headers</TokenIdentifier>
+			<Abstract type="html">Call headers.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCall/headers</TokenIdentifier>
+			<Abstract type="html">Call headers.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/setUserInfo:</TokenIdentifier>
+			<Abstract type="html">The user data property may be used to associate an arbitrary
+contextual object with a particular instance of a call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/userInfo</TokenIdentifier>
+			<Abstract type="html">The user data property may be used to associate an arbitrary
+contextual object with a particular instance of a call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SINCall/userInfo</TokenIdentifier>
+			<Abstract type="html">The user data property may be used to associate an arbitrary
+contextual object with a particular instance of a call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/answer</TokenIdentifier>
+			<Abstract type="html">Answer an incoming call.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>- (void)answer</Declaration>
+			
+			
+			<Anchor>//api/name/answer</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/hangup</TokenIdentifier>
+			<Abstract type="html">Ends the call, regardless of what state it is in. If the call is
+an incoming call that has not yet been answered, the call will
+be reported as denied to the caller.</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>- (void)hangup</Declaration>
+			
+			
+			<Anchor>//api/name/hangup</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCall/sendDTMF:</TokenIdentifier>
+			<Abstract type="html">Sends a DTMF tone for tone dialing. (Only applicable for calls terminated
+to PSTN (Publicly Switched Telephone Network)).</Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+			
+			<Declaration>- (void)sendDTMF:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">DTMF key must be in [0-9, #, *, A-D].</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendDTMF:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

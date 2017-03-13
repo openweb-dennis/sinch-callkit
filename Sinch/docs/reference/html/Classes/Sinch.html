@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Sinch Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Sinch </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Sinch</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/clientWithApplicationKey:applicationSecret:environmentHost:userId:">+ clientWithApplicationKey:applicationSecret:environmentHost:userId:</option>
+		
+		<option value="//api/name/clientWithApplicationKey:applicationSecret:environmentHost:userId:cli:">+ clientWithApplicationKey:applicationSecret:environmentHost:userId:cli:</option>
+		
+		<option value="//api/name/clientWithApplicationKey:environmentHost:userId:">+ clientWithApplicationKey:environmentHost:userId:</option>
+		
+		<option value="//api/name/clientWithApplicationKey:environmentHost:userId:cli:">+ clientWithApplicationKey:environmentHost:userId:cli:</option>
+		
+		<option value="//api/name/managedPushWithAPSEnvironment:">+ managedPushWithAPSEnvironment:</option>
+		
+		<option value="//api/name/version">+ version</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">Sinch Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>Sinch.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The Sinch class is used to instantiate a <a href="../Protocols/SINClient.html">SINClient</a>.</p>
+
+<p>This is the starting point for an app that wishes to use the Sinch SDK.</p>
+
+<p>To construct a <a href="../Protocols/SINClient.html">SINClient</a>, the required configuration parameters are:</p>
+
+<ul>
+<li>Application Key</li>
+<li>Environment host (Production or Sandbox)</li>
+<li>UserID</li>
+</ul>
+
+
+<p>It is optional to specify:</p>
+
+<ul>
+<li><p>Application Secret (see the specific factory methods and the User Guide
+for details on why and how to use the secret).</p></li>
+<li><p>CLI (Calling-Line Identifier / Caller-ID) that will be used for calls
+terminated to PSTN (Publicly Switched Telephone Network).</p></li>
+</ul>
+
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/clientWithApplicationKey:environmentHost:userId:" title="clientWithApplicationKey:environmentHost:userId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clientWithApplicationKey:environmentHost:userId:">+&nbsp;clientWithApplicationKey:environmentHost:userId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Instantiate a new client.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;SINClient&gt;)clientWithApplicationKey:(NSString *)<em>applicationKey</em> environmentHost:(NSString *)<em>environmentHost</em> userId:(NSString *)<em>userId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>applicationKey</code></th>
+						<td><p>Application key identifying the application.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>environmentHost</code></th>
+						<td><p>Host for base URL for the Sinch API environment
+to be used. E.g. &lsquo;sandbox.sinch.com&rsquo;</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>ID of the local user</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The newly instantiated client.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the client is initiated with an application key, but no application
+secret, starting the client the first time will require additional
+authorization credentials as part of registering the user.
+It will therefore be required of the SINClientDelegate to implement
+<a href="../Protocols/SINClientDelegate.html#//api/name/client:requiresRegistrationCredentials:">[SINClientDelegate client:requiresRegistrationCredentials:]</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINClient.html">SINClient</a></p></code></li>
+					
+					<li><code><p><a href="../Protocols/SINClientRegistration.html">SINClientRegistration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Sinch.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clientWithApplicationKey:applicationSecret:environmentHost:userId:" title="clientWithApplicationKey:applicationSecret:environmentHost:userId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clientWithApplicationKey:applicationSecret:environmentHost:userId:">+&nbsp;clientWithApplicationKey:applicationSecret:environmentHost:userId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Instantiate a new client.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;SINClient&gt;)clientWithApplicationKey:(NSString *)<em>applicationKey</em> applicationSecret:(NSString *)<em>applicationSecret</em> environmentHost:(NSString *)<em>environmentHost</em> userId:(NSString *)<em>userId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>applicationKey</code></th>
+						<td><p>Application key identifying the application.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>applicationSecret</code></th>
+						<td><p>Application secret bound to application key.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>environmentHost</code></th>
+						<td><p>Host for base URL for the Sinch API environment
+to be used. E.g &lsquo;sandbox.sinch.com&rsquo;</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>ID of the local user</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The newly instantiated client.</p>
+
+<p>This method should be used if user-registration and authorization with Sinch
+is to be handled completely by the app (without additional involvement
+of a backend-service providing additional credentials to the application.)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINClient.html">SINClient</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Sinch.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clientWithApplicationKey:environmentHost:userId:cli:" title="clientWithApplicationKey:environmentHost:userId:cli:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clientWithApplicationKey:environmentHost:userId:cli:">+&nbsp;clientWithApplicationKey:environmentHost:userId:cli:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Instantiate a new client with a CLI (may be used for PSTN-terminated calls).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;SINClient&gt;)clientWithApplicationKey:(NSString *)<em>applicationKey</em> environmentHost:(NSString *)<em>environmentHost</em> userId:(NSString *)<em>userId</em> cli:(NSString *)<em>cli</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>applicationKey</code></th>
+						<td><p>Application key identifying the application.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>environmentHost</code></th>
+						<td><p>Host for base URL for the Sinch API environment
+to be used. E.g. &lsquo;sandbox.sinch.com&rsquo;</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>ID of the local user</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cli</code></th>
+						<td><p>Caller-ID when terminating calls to PSTN. Must be a valid phone
+number.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The newly instantiated client.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the client is initiated with an application key, but no application
+secret, starting the client the first time will require additional
+authorization credentials as part of registering the user.
+It will therefore be required of the SINClientDelegate to implement
+<a href="../Protocols/SINClientDelegate.html#//api/name/client:requiresRegistrationCredentials:">[SINClientDelegate client:requiresRegistrationCredentials:]</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINClient.html">SINClient</a></p></code></li>
+					
+					<li><code><p><a href="../Protocols/SINClientRegistration.html">SINClientRegistration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Sinch.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clientWithApplicationKey:applicationSecret:environmentHost:userId:cli:" title="clientWithApplicationKey:applicationSecret:environmentHost:userId:cli:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clientWithApplicationKey:applicationSecret:environmentHost:userId:cli:">+&nbsp;clientWithApplicationKey:applicationSecret:environmentHost:userId:cli:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Instantiate a new client with a CLI (may be used for PSTN-terminated calls).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;SINClient&gt;)clientWithApplicationKey:(NSString *)<em>applicationKey</em> applicationSecret:(NSString *)<em>applicationSecret</em> environmentHost:(NSString *)<em>environmentHost</em> userId:(NSString *)<em>userId</em> cli:(NSString *)<em>cli</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>applicationKey</code></th>
+						<td><p>Application key identifying the application.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>applicationSecret</code></th>
+						<td><p>Application secret bound to application key.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>environmentHost</code></th>
+						<td><p>Host for base URL for the Sinch API environment
+to be used. E.g &lsquo;sandbox.sinch.com&rsquo;</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>ID of the local user</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cli</code></th>
+						<td><p>Caller-ID when terminating calls to PSTN. Must be a valid phone
+number.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The newly instantiated client.</p>
+
+<p>This method should be used if user-registration and authorization with Sinch
+is to be handled completely by the app (without additional involvement
+of a backend-service providing additional credentials to the application.)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINClient.html">SINClient</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Sinch.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/managedPushWithAPSEnvironment:" title="managedPushWithAPSEnvironment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/managedPushWithAPSEnvironment:">+&nbsp;managedPushWithAPSEnvironment:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Instantiate a new <a href="../Protocols/SINManagedPush.html"><code>SINManagedPush</code></a> instance to enable Push Notifications
+managed by the Sinch SDK and platform. When using managed push notifications,
+push notifications will be sent by the Sinch platform provided that Apple
+Push Notification Certificates for your application have been uploaded to Sinch.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;SINManagedPush&gt;)managedPushWithAPSEnvironment:(SINAPSEnvironment)<em>apsEnvironment</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>apsEnvironment</code></th>
+						<td><p>Specification of which Apple Push Notification Service environment
+the application is bound to (via code signing and Provisioning Profile).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/SINAPSEnvironment.html">SINAPSEnvironment</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Sinch.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/version" title="version"></a>
+	<h3 class="method-title"><code><a href="#//api/name/version">+&nbsp;version</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the Sinch SDK version.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)version</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Sinch.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Sinch. All rights reserved. Updated: 2015-11-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

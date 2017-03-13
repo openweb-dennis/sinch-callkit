@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SINClient Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Sinch </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Sinch</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/userId">userId</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/audioController">- audioController</option>
+		
+		<option value="//api/name/callClient">- callClient</option>
+		
+		<option value="//api/name/enableManagedPushNotifications">- enableManagedPushNotifications</option>
+		
+		<option value="//api/name/isStarted">- isStarted</option>
+		
+		<option value="//api/name/messageClient">- messageClient</option>
+		
+		<option value="//api/name/registerPushNotificationData:">- registerPushNotificationData:</option>
+		
+		<option value="//api/name/registerPushNotificationDeviceToken:type:apsEnvironment:">- registerPushNotificationDeviceToken:type:apsEnvironment:</option>
+		
+		<option value="//api/name/relayLocalNotification:">- relayLocalNotification:</option>
+		
+		<option value="//api/name/relayRemotePushNotification:">- relayRemotePushNotification:</option>
+		
+		<option value="//api/name/relayRemotePushNotificationPayload:">- relayRemotePushNotificationPayload:</option>
+		
+		<option value="//api/name/setPushNotificationDisplayName:">- setPushNotificationDisplayName:</option>
+		
+		<option value="//api/name/setSupportActiveConnectionInBackground:">- setSupportActiveConnectionInBackground:</option>
+		
+		<option value="//api/name/setSupportCalling:">- setSupportCalling:</option>
+		
+		<option value="//api/name/setSupportMessaging:">- setSupportMessaging:</option>
+		
+		<option value="//api/name/setSupportPushNotifications:">- setSupportPushNotifications:</option>
+		
+		<option value="//api/name/start">- start</option>
+		
+		<option value="//api/name/startListeningOnActiveConnection">- startListeningOnActiveConnection</option>
+		
+		<option value="//api/name/stop">- stop</option>
+		
+		<option value="//api/name/stopListeningOnActiveConnection">- stopListeningOnActiveConnection</option>
+		
+		<option value="//api/name/terminate">- terminate</option>
+		
+		<option value="//api/name/terminateGracefully">- terminateGracefully</option>
+		
+		<option value="//api/name/unregisterPushNotificationData">- unregisterPushNotificationData</option>
+		
+		<option value="//api/name/unregisterPushNotificationDeviceToken">- unregisterPushNotificationDeviceToken</option>
+		
+		<option value="//api/name/videoController">- videoController</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SINClient Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SINClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The SINClient is the Sinch SDK entry point.</p>
+
+<p>It provides access to the feature classes in the Sinch SDK:
+SINMessageClient, SINCallClient and SINAudioController.
+It is also used to configure the user&rsquo;s and device&rsquo;s capabilities.</p>
+
+<h3>User Identification</h3>
+
+<p>The user IDs that are used to identify users application specific.
+If the app already has a scheme for user IDs (email addresses,
+phone numbers, customer numbers, etc.), the same ID could be used
+when configuring the SINClient.</p>
+
+<h3>Example</h3>
+
+<pre><code>// Instantiate a client object using the client factory.
+id&lt;SINClient&gt; sinchClient = [Sinch clientWithApplicationKey:@"&lt;APPKEY&gt;"
+                                          applicationSecret:@"&lt;APPSECRET&gt;"
+                                            environmentHost:@"clientapi.sinch.com"
+                                                     userId:@"&lt;USERID&gt;"];
+
+// Specify the client capabilities. At least one of the messaging or calling capabilities should be enabled.
+[sinchClient setSupportCalling:YES];
+[sinchClient setSupportMessaging:YES];
+[sinchClient setSupportActiveConnectionInBackground:YES]; // (optional)
+[sinchClient setSupportPushNotifications:YES]; // (optional)
+
+// Set your delegate object
+sinchClient.delegate = ... ;
+
+// Start the client
+[sinchClient start];
+
+// Start listening for incoming events (calls and messages).
+[sinchClient startListeningOnActiveConnection];
+
+// Use the SINCallClient to place and receive calls
+// Use the SINMessageClient  to send and receive messages
+
+// Stop listening for incoming events (calls and messages).
+[sinchClient stopListeningOnActiveConnection];
+
+// Terminate the client when the calling and messaging functionalities are no longer needed.
+[sinchClient terminate];
+</code></pre>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The object that acts as the delegate of the receiving client.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;SINClientDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The delegate object handles call state change events and must
+adopt the <a href="../Protocols/SINClientDelegate.html">SINClientDelegate</a> protocol.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINClientDelegate.html">SINClientDelegate</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userId" title="userId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userId">&nbsp;&nbsp;userId</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ID of the local user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *userId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSupportCalling:" title="setSupportCalling:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSupportCalling:">&ndash;&nbsp;setSupportCalling:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specify whether this device should support making and receiving calls.
+Default is NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setSupportCalling:(BOOL)<em>supported</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>supported</code></th>
+						<td><p>Enable or disable support making and receiving calls.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method should be called before calling <a href="#//api/name/start">[SINClient start]</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINCallClient.html">SINCallClient</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSupportMessaging:" title="setSupportMessaging:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSupportMessaging:">&ndash;&nbsp;setSupportMessaging:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specify whether this application should support sending and receiving instant messages.
+Default is NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setSupportMessaging:(BOOL)<em>supported</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>supported</code></th>
+						<td><p>Enable or disable support for instant messaging.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method should be called before calling <a href="#//api/name/start">[SINClient start]</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINMessageClient.html">SINMessageClient</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSupportPushNotifications:" title="setSupportPushNotifications:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSupportPushNotifications:">&ndash;&nbsp;setSupportPushNotifications:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specify whether this device should receive incoming calls via push
+notifications.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setSupportPushNotifications:(BOOL)<em>supported</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>supported</code></th>
+						<td><p>Enable or disable support for push notifications.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method should be called before calling <a href="#//api/name/start">[SINClient start]</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/registerPushNotificationData:">[SINClient registerPushNotificationData:]</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/unregisterPushNotificationData">[SINClient unregisterPushNotificationData]</a>;</p></code></li>
+					
+					<li><code><p><a href="#//api/name/relayRemotePushNotificationPayload:">[SINClient relayRemotePushNotificationPayload:]</a>;</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableManagedPushNotifications" title="enableManagedPushNotifications"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableManagedPushNotifications">&ndash;&nbsp;enableManagedPushNotifications</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specify that the <a href="../Classes/Sinch.html">Sinch</a> SDK and platform should take care of
+sending the push notification to the other device via the appropriate
+push notification gateway (i.e. Apple Push Notification Service for iOS devices,
+and Google Cloud Messaging (GCM) for Android devices).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableManagedPushNotifications</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>(This require that you have uploaded your Apple Push Notification
+Certificate(s) on the Sinch website)</p>
+
+<p>This method will internally also invoke [SINClient setSupportPushNotifications:YES]</p>
+
+<p>Method should be called before calling <a href="#//api/name/start">[SINClient start]</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/registerPushNotificationDeviceToken:type:apsEnvironment:">[SINClient registerPushNotificationDeviceToken:type:apsEnvironment:]</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/unregisterPushNotificationDeviceToken">[SINClient unregisterPushNotificationDeviceToken]</a>;</p></code></li>
+					
+					<li><code><p><a href="#//api/name/relayRemotePushNotificationPayload:">[SINClient relayRemotePushNotificationPayload:]</a>;</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSupportActiveConnectionInBackground:" title="setSupportActiveConnectionInBackground:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSupportActiveConnectionInBackground:">&ndash;&nbsp;setSupportActiveConnectionInBackground:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specify whether to keep the active connection open if the application
+leaves foreground.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setSupportActiveConnectionInBackground:(BOOL)<em>supported</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>supported</code></th>
+						<td><p>Specifies whether the active connection should be kept open
+even if the application leaves foreground.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If specified to be supported, the active connection which is used for
+receiving incoming calls will be kept open even if the application leaves
+foreground. Enabling this also requires that &lsquo;voip&rsquo; is specified for
+UIBackgroundModes in the application&rsquo;s Info.plist.</p>
+
+<p>If specified to not be supported, the application will not be running in the
+background, and the active connection which is used for receiving incoming
+calls will be closed once the application leaves foreground.
+(Though it will be re-opened once the application returns to foreground).
+If not supported, the application will be required to rely on push
+notifications to receive incoming calls if the application leaves foreground.</p>
+
+<p>If specified to be supported, the client&rsquo;s delegate is required to implement
+additional parts of the SINClientDelegate protocol. It is required to
+implement [SINClientDelegate client:localNotificationForIncomingCall:]</p>
+
+<p>This method should be called before calling <a href="#//api/name/start">[SINClient start]</a>.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInternalInconsistencyException</code></th>
+						<td><p>Throws exception if called after
+client is started.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="method-title"><code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start client to enable the calling functionality.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)start</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The client <a href="#//api/name/delegate">delegate</a> should be set before calling the start method to
+guarantee that <a href="#//api/name/delegate">delegate</a> callbacks are received as expected.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/terminate" title="terminate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/terminate">&ndash;&nbsp;terminate</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Terminate client when the calling functionality is no longer needed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)terminate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>It is generally recommended to initiate the Sinch client, start it, but not
+terminate it, during the lifetime of the running application. If incoming calls
+are not desired for a limited period of time or similar scenarios, it is
+instead recommended to only stop listening for incoming calls via the method
+(<a href="#//api/name/stopListeningOnActiveConnection">[SINClient stopListeningOnActiveConnection]</a>).
+This is simply because initializing and starting the client is relatively
+resource intensive both in terms of CPU, as well as there is potentially
+network requests involved in stopping and re-starting the client.</p>
+
+<p>If desired to dispose the client, it is required to explicitly invoke terminate
+(or <a href="#//api/name/terminateGracefully">terminateGracefully</a>) to relinquish certain resources.
+This method should always be called before the application code releases its
+last reference to the client.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/terminateGracefully" title="terminateGracefully"></a>
+	<h3 class="method-title"><code><a href="#//api/name/terminateGracefully">&ndash;&nbsp;terminateGracefully</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Terminates the client, while still leaving it some time to finish up currently
+pending tasks, for example finishing pending HTTP requests.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)terminateGracefully</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>See <a href="#//api/name/terminate">[SINClient terminate]</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>THIS METHOD IS DEPRECATED. See <a href="#//api/name/terminate">[SINClient terminate]</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isStarted" title="isStarted"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isStarted">&ndash;&nbsp;isStarted</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check whether client is successfully started.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isStarted</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A boolean value indicating whether the client has successfully
+started and is ready to perform calling functionality.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startListeningOnActiveConnection" title="startListeningOnActiveConnection"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startListeningOnActiveConnection">&ndash;&nbsp;startListeningOnActiveConnection</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This will establish an active keep-alive connection as a signaling channel
+for receiving incoming calls.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startListeningOnActiveConnection</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The active connection can be specified to be kept open even if the
+application leaves foreground, see
+<a href="#//api/name/setSupportActiveConnectionInBackground:">[SINClient setSupportActiveConnectionInBackground:]</a>).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopListeningOnActiveConnection" title="stopListeningOnActiveConnection"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopListeningOnActiveConnection">&ndash;&nbsp;stopListeningOnActiveConnection</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This will close the connection that is kept alive and used as signaling
+channel for receiving incoming calls. This method should be used when the
+application no longer intends to utilize the long-lived connection for
+receiving incoming calls.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopListeningOnActiveConnection</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the intention is to completely turn off incoming calls and the application
+is also using push notifications as a method of receiving
+incoming calls, then the application should also unregister previously
+registered push notification data via the method
+<a href="#//api/name/unregisterPushNotificationData">[SINClient unregisterPushNotificationData]</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/relayRemotePushNotificationPayload:" title="relayRemotePushNotificationPayload:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/relayRemotePushNotificationPayload:">&ndash;&nbsp;relayRemotePushNotificationPayload:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method used to forward the Sinch-specific payload extracted from an incoming
+Apple Push Notification.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SINNotificationResult&gt;)relayRemotePushNotificationPayload:(NSString *)<em>payload</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>payload</code></th>
+						<td><p>Sinch-specific payload which was transferred with an
+Apple Push Notification.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Value indicating initial inspection of push notification payload.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINNotificationResult.html">SINNotificationResult</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/relayRemotePushNotification:" title="relayRemotePushNotification:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/relayRemotePushNotification:">&ndash;&nbsp;relayRemotePushNotification:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method used to forward a remote notification dictionary if using <a href="#//api/name/enableManagedPushNotifications">[SINClient enableManagedPushNotifications]</a>;</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SINNotificationResult&gt;)relayRemotePushNotification:(NSDictionary *)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>Remote notification payload which was transferred with an Apple Push Notification.
+and received via [UIApplicationDelegate application:didReceiveRemoteNotification:].</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Value indicating initial inspection of push notification.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINNotificationResult.html">SINNotificationResult</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/relayLocalNotification:" title="relayLocalNotification:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/relayLocalNotification:">&ndash;&nbsp;relayLocalNotification:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method used to handle a local notification which has been scheduled and
+taken action upon by the application user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SINNotificationResult&gt;)relayLocalNotification:(UILocalNotification *)<em>notification</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notification</code></th>
+						<td><p>UILocalNotification</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Value indicating outcome of the attempt to handle the notification.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInternalInconsistencyException</code></th>
+						<td><p>Throws exception if called before
+client startup has completed.
+A case when the client might not be started yet is if the
+application user takes action on an local notification that is not
+relevant any more. E.g. the user ignored the notification when it
+was first presented, then quit the app, and the notification was
+left in Notification Center and was taken action upon at a later
+time.
+Applications should relay all local notifications where sin_isSinchNotification
+is True.</p>
+
+<p><a href="#//api/name/isStarted">[SINClient isStarted]</a> may be used to guard against calling this
+method at inappropriate times.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/isStarted">[SINClient isStarted]</a></p></code></li>
+					
+					<li><code><p><a href="../Protocols/SINNotificationResult.html">SINNotificationResult</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerPushNotificationData:" title="registerPushNotificationData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerPushNotificationData:">&ndash;&nbsp;registerPushNotificationData:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Register device-specific data that can be used to identify this device
+and tie it to an Apple Push Notification device token.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerPushNotificationData:(NSData *)<em>pushNotificationData</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pushNotificationData</code></th>
+						<td><p>Device-specific data that can be used to
+tie a device to a specific Apple Push
+Notification device token</p>
+
+<p>The <code>pushNotificationData</code> is what will be passed back in
+<a href="../Protocols/SINCallDelegate.html#//api/name/call:shouldSendPushNotifications:">[SINCallDelegate call:shouldSendPushNotifications:]</a>
+in the caller&rsquo;s application, unless the application on the destination device
+(the device on which this method is called) is not running in the background,
+and is required to woken up it via a Apple Push Notification.</p>
+
+<p>See [UIApplication registerForRemoteNotificationTypes:] on how to obtain
+the current device token.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINCallDelegate.html">SINCallDelegate</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unregisterPushNotificationData" title="unregisterPushNotificationData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unregisterPushNotificationData">&ndash;&nbsp;unregisterPushNotificationData</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unregister previously registered device-specific data that is used to
+identify this device and tie it to an Apple Push Notification device token.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unregisterPushNotificationData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If it is unwanted that the user receives further remote push notifications
+for <a href="../Classes/Sinch.html">Sinch</a> calls, this method should be used to unregister the push data.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerPushNotificationDeviceToken:type:apsEnvironment:" title="registerPushNotificationDeviceToken:type:apsEnvironment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerPushNotificationDeviceToken:type:apsEnvironment:">&ndash;&nbsp;registerPushNotificationDeviceToken:type:apsEnvironment:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Register push notification device token for using &ldquo;<a href="../Classes/Sinch.html">Sinch</a> Managed Push Notifications&rdquo;.
+The preferred way of enabling push notifications is to use <a href="../Protocols/SINManagedPush.html"><code>SINManagedPush</code></a> which
+will automatically register the device token with the client, but this method can
+also be used directly.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerPushNotificationDeviceToken:(NSData *)<em>deviceToken</em> type:(NSString *)<em>pushType</em> apsEnvironment:(SINAPSEnvironment)<em>apsEnvironment</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceToken</code></th>
+						<td><p>A token that identifies the device to APNs.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pushType</code></th>
+						<td><p>SINPushType NSString constant, i.e. SINPushTypeVoIP or SINPushTypeRemote</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>apsEnvironment</code></th>
+						<td><p>Specification of which Apple Push Notification Service environment
+the device token is bound to.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/SINAPSEnvironment.html">SINAPSEnvironment</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unregisterPushNotificationDeviceToken" title="unregisterPushNotificationDeviceToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unregisterPushNotificationDeviceToken">&ndash;&nbsp;unregisterPushNotificationDeviceToken</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unregister push notification device token when using &ldquo;<a href="../Classes/Sinch.html">Sinch</a> Managed Push Notifications&rdquo;
+Example if the user log out, the device token should be unregistered.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unregisterPushNotificationDeviceToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPushNotificationDisplayName:" title="setPushNotificationDisplayName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPushNotificationDisplayName:">&ndash;&nbsp;setPushNotificationDisplayName:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specify a display name to be used when the Sinch client sends a push notification on
+behalf of the local user (e.g. for an outgoing call).
+This will only be used when using <a href="#//api/name/enableManagedPushNotifications">[SINClient enableManagedPushNotifications]</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setPushNotificationDisplayName:(NSString *)<em>displayName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>displayName</code></th>
+						<td><p>display name may at most be 255 bytes (UTF-8 encoded) long.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Display name is included in a push notification on a best-effort basis. For example, if the
+target device has very limited push payload size constraints (e.g iOS 7 can only handle
+255 byte push notification payload), then the display name may not be included.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/callClient" title="callClient"></a>
+	<h3 class="method-title"><code><a href="#//api/name/callClient">&ndash;&nbsp;callClient</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the call client object for placing and receiving calls.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SINCallClient&gt;)callClient</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><ul>
+<li><a href="#//api/name/setSupportCalling:">[SINClient setSupportCalling:]</a></li>
+</ul>
+</code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messageClient" title="messageClient"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messageClient">&ndash;&nbsp;messageClient</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the message client object for sending messages and adding
+delegates for message events.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SINMessageClient&gt;)messageClient</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><ul>
+<li><a href="#//api/name/setSupportMessaging:">[SINClient setSupportMessaging:]</a></li>
+</ul>
+</code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audioController" title="audioController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioController">&ndash;&nbsp;audioController</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve the interface for the audio controller, which provides access
+to various audio related functionality, such as muting the microphone,
+enabling the speaker, and playing ring tones.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SINAudioController&gt;)audioController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/videoController" title="videoController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/videoController">&ndash;&nbsp;videoController</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve the interface for the video controller, which provides
+access to video related functionality.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SINVideoController&gt;)videoController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Sinch. All rights reserved. Updated: 2015-11-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

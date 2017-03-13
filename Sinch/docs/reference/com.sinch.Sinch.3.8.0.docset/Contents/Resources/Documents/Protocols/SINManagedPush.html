@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SINManagedPush Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Sinch </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Sinch</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/userNotificationTypes">userNotificationTypes</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/registerUserNotificationSettings">- registerUserNotificationSettings</option>
+		
+		<option value="//api/name/setDesiredPushType:">- setDesiredPushType:</option>
+		
+		<option value="//api/name/setDesiredPushTypeAutomatically">- setDesiredPushTypeAutomatically</option>
+		
+		<option value="//api/name/setDisplayName:">- setDisplayName:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SINManagedPush Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SINManagedPush.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>SINManagedPush is a helper class to manage push notification credentials both
+for regular Remote Push Notifications and VoIP Push Notifications (which is
+available since iOS 8).</p>
+
+<p>SINManagedPush acts as a facade for registering for device tokens for both
+types of notifications, and can also automatically register any received push
+credentials to any active <a href="../Protocols/SINClient.html">SINClient</a>.</p>
+
+<p>SINManagedPush simplifies scenarios such as when receiving a device token
+occur before creating a <a href="../Protocols/SINClient.html">SINClient</a>. In such a case, SINManagedPush can
+automatically register the device token when the <a href="../Protocols/SINClient.html">SINClient</a> is created and
+started.</p>
+
+<h3>Example</h3>
+
+<pre><code>-(BOOL)application:(UIApplication *)application
+  didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.push = [Sinch managedPushWithAPSEnvironment:SINAPSEnvironmentAutomatic]
+    [self.push setDesiredPushTypeAutomatically];
+    [self.push registerUserNotificationSettings];
+}
+</code></pre>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/userNotificationTypes" title="userNotificationTypes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userNotificationTypes">&nbsp;&nbsp;userNotificationTypes</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specify what user notification types should be used for remote push notifications.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) UIUserNotificationType userNotificationTypes</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property      userNotificationTypes</p>
+
+<p>Defaults to UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge</p>
+
+<p>userNotificationTypes should be set before invoking <a href="#//api/name/setDesiredPushType:">[SINManagedPush setDesiredPushType:]</a> or
+<a href="#//api/name/setDesiredPushTypeAutomatically">[SINManagedPush setDesiredPushTypeAutomatically]</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINManagedPush.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDesiredPushType:" title="setDesiredPushType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDesiredPushType:">&ndash;&nbsp;setDesiredPushType:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests registration of either VoIP remote notifications or regular remote
+notifications (similar to PushKit&rsquo;s [PKPushRegistry setDesiredPushTypes:]).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDesiredPushType:(NSString *)<em>pushType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pushType</code></th>
+						<td><p>Desired SINPushType NSString constant, e.g. SINPushTypeVoIP or SINPushTypeRemote</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINManagedPush.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDesiredPushTypeAutomatically" title="setDesiredPushTypeAutomatically"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDesiredPushTypeAutomatically">&ndash;&nbsp;setDesiredPushTypeAutomatically</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set desired push type based on runtime detection of iOS version and whether
+PushKit is linked or not.  This method will invoke <code>[self setDesiredPushType:SINPushTypeVoIP]</code>
+if PushKit is linked, else <code>[self setDesiredPushType:SINPushTypeRemote]</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDesiredPushTypeAutomatically</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINManagedPush.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerUserNotificationSettings" title="registerUserNotificationSettings"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerUserNotificationSettings">&ndash;&nbsp;registerUserNotificationSettings</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Similar to [UIApplication registerUserNotificationSettings:], this will
+register user notification settings based on <a href="#//api/name/userNotificationTypes"><code>[SINManagedPush userNotificationTypes]</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerUserNotificationSettings</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>On iOS 8 or higher it will invoke <code>[UIApplication registerUserNotificationSettings:]</code> and
+on iOS 7 or lower it will invoke <code>[UIApplication registerForRemoteNotificationTypes:]</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINManagedPush.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDisplayName:" title="setDisplayName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDisplayName:">&ndash;&nbsp;setDisplayName:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specify a display name to be used when <a href="../Classes/Sinch.html">Sinch</a> sends a push notification on
+behalf of the local user (e.g. for an outgoing call). This method will
+automatically invoke <a href="../Protocols/SINClient.html#//api/name/setPushNotificationDisplayName:"><code>[SINClient setPushNotificationDisplayName:]</code></a> when a
+new <a href="../Classes/Sinch.html">Sinch</a> client is started.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDisplayName:(NSString *)<em>displayName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>displayName</code></th>
+						<td><p>Display name that will be injected into remote push notification
+alert message.</p>
+
+<p>Display name will be injected into the localization string SIN_INCOMING_CALL_DISPLAY_NAME.
+It will also be passed along in Google Cloud Messaging push notifications if a remote
+user&rsquo;s device is an Android device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINClient.html">SINClient</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINManagedPush.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Sinch. All rights reserved. Updated: 2015-11-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

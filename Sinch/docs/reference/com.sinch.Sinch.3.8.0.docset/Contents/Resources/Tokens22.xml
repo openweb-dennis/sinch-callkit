@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINMessageClientDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINMessageClientDelegate</TokenIdentifier>
+			<Abstract type="html">The message client delegate by which message events are communicated.</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageClientDelegate/messageClient:didReceiveIncomingMessage:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that a message has been received.</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)messageClient:(id&lt;SINMessageClient&gt;)messageClient didReceiveIncomingMessage:(id&lt;SINMessage&gt;)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>messageClient</Name>
+					<Abstract type="html">The message client that is informing the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The incoming message.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/messageClient:didReceiveIncomingMessage:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageClientDelegate/messageSent:recipientId:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that a message for a specific recipient has been sent by the local user.</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)messageSent:(id&lt;SINMessage&gt;)message recipientId:(NSString *)recipientId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">Message that was sent.</Abstract>
+				</Parameter><Parameter>
+					<Name>recipientId</Name>
+					<Abstract type="html">Recipient of the message</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/messageSent:recipientId:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageClientDelegate/messageDelivered:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that a message has been delivered (to a particular
+recipient).</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+			
+			<Declaration>- (void)messageDelivered:(id&lt;SINMessageDeliveryInfo&gt;)info</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>info</Name>
+					<Abstract type="html">Info identifying the message that was delivered, and to whom.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/messageDelivered:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageClientDelegate/messageFailed:info:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the message client failed to send a message.</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+			
+			<Declaration>- (void)messageFailed:(id&lt;SINMessage&gt;)message info:(id&lt;SINMessageFailureInfo&gt;)messageFailureInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message that could not be delivered.</Abstract>
+				</Parameter><Parameter>
+					<Name>messageFailureInfo</Name>
+					<Abstract type="html">SINMessageFailureInfo object,
+identifying the message and for which recipient
+sending the message failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/messageFailed:info:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINMessageClientDelegate/message:shouldSendPushNotifications:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the receiver&apos;s device can&apos;t be reached directly,
+and it is required to wake up the receiver&apos;s application with a push
+notification.</Abstract>
+			<DeclaredIn>SINMessageClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINPushPair</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)message:(id&lt;SINMessage&gt;)message shouldSendPushNotifications:(NSArray *)pushPairs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message for which pushing is required.</Abstract>
+				</Parameter><Parameter>
+					<Name>pushPairs</Name>
+					<Abstract type="html">Array of SINPushPair. Each pair identififies a certain
+device that should be requested to be woken up via
+Apple Push Notification.
+
+The push data entries are equal to what the receiver&apos;s
+application passed to the method
+[SINClient registerPushNotificationData:] method.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/message:shouldSendPushNotifications:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

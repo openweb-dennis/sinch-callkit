@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SINLocalNotification.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SINLocalNotification</TokenIdentifier>
+			<Abstract type="html">SINLocalNotification can be used to specify presentation data for a local
+push that is to be used for an incoming call.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/setAlertBody:</TokenIdentifier>
+			<Abstract type="html">The message displayed in the notification alert.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *alertBody</Declaration>
+			
+			
+			<Anchor>//api/name/alertBody</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/alertBody</TokenIdentifier>
+			<Abstract type="html">The message displayed in the notification alert.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *alertBody</Declaration>
+			
+			
+			<Anchor>//api/name/alertBody</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINLocalNotification/alertBody</TokenIdentifier>
+			<Abstract type="html">The message displayed in the notification alert.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *alertBody</Declaration>
+			
+			
+			<Anchor>//api/name/alertBody</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/setHasAction:</TokenIdentifier>
+			<Abstract type="html">A Boolean value that controls whether the notification shows or hides the
+alert action.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL hasAction</Declaration>
+			
+			
+			<Anchor>//api/name/hasAction</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/hasAction</TokenIdentifier>
+			<Abstract type="html">A Boolean value that controls whether the notification shows or hides the
+alert action.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL hasAction</Declaration>
+			
+			
+			<Anchor>//api/name/hasAction</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINLocalNotification/hasAction</TokenIdentifier>
+			<Abstract type="html">A Boolean value that controls whether the notification shows or hides the
+alert action.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL hasAction</Declaration>
+			
+			
+			<Anchor>//api/name/hasAction</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/setAlertAction:</TokenIdentifier>
+			<Abstract type="html">The title of the action button or slider.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *alertAction</Declaration>
+			
+			
+			<Anchor>//api/name/alertAction</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/alertAction</TokenIdentifier>
+			<Abstract type="html">The title of the action button or slider.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *alertAction</Declaration>
+			
+			
+			<Anchor>//api/name/alertAction</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINLocalNotification/alertAction</TokenIdentifier>
+			<Abstract type="html">The title of the action button or slider.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *alertAction</Declaration>
+			
+			
+			<Anchor>//api/name/alertAction</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/setAlertLaunchImage:</TokenIdentifier>
+			<Abstract type="html">Identifies the image used as the launch image when the user taps (or slides)
+the action button (or slider).</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *alertLaunchImage</Declaration>
+			
+			
+			<Anchor>//api/name/alertLaunchImage</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/alertLaunchImage</TokenIdentifier>
+			<Abstract type="html">Identifies the image used as the launch image when the user taps (or slides)
+the action button (or slider).</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *alertLaunchImage</Declaration>
+			
+			
+			<Anchor>//api/name/alertLaunchImage</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINLocalNotification/alertLaunchImage</TokenIdentifier>
+			<Abstract type="html">Identifies the image used as the launch image when the user taps (or slides)
+the action button (or slider).</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *alertLaunchImage</Declaration>
+			
+			
+			<Anchor>//api/name/alertLaunchImage</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/setSoundName:</TokenIdentifier>
+			<Abstract type="html">The name of the file containing the sound to play when an alert is displayed.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *soundName</Declaration>
+			
+			
+			<Anchor>//api/name/soundName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/soundName</TokenIdentifier>
+			<Abstract type="html">The name of the file containing the sound to play when an alert is displayed.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *soundName</Declaration>
+			
+			
+			<Anchor>//api/name/soundName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINLocalNotification/soundName</TokenIdentifier>
+			<Abstract type="html">The name of the file containing the sound to play when an alert is displayed.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *soundName</Declaration>
+			
+			
+			<Anchor>//api/name/soundName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/setApplicationIconBadgeNumber:</TokenIdentifier>
+			<Abstract type="html">The number to display as the application’s icon badge.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger applicationIconBadgeNumber</Declaration>
+			
+			
+			<Anchor>//api/name/applicationIconBadgeNumber</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/applicationIconBadgeNumber</TokenIdentifier>
+			<Abstract type="html">The number to display as the application’s icon badge.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger applicationIconBadgeNumber</Declaration>
+			
+			
+			<Anchor>//api/name/applicationIconBadgeNumber</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINLocalNotification/applicationIconBadgeNumber</TokenIdentifier>
+			<Abstract type="html">The number to display as the application’s icon badge.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger applicationIconBadgeNumber</Declaration>
+			
+			
+			<Anchor>//api/name/applicationIconBadgeNumber</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/set_0:</TokenIdentifier>
+			<Abstract type="html">Category of the local notification, as passed to
+[UIUserNotificationSettings settingsForUserNotificationTypes:userNotificationActionSettings:]
+The value of this property is nil by default.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *NS_AVAILABLE_IOS ( 8 _0</Declaration>
+			
+			
+			<Anchor>//api/name/_0</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SINLocalNotification/_0</TokenIdentifier>
+			<Abstract type="html">Category of the local notification, as passed to
+[UIUserNotificationSettings settingsForUserNotificationTypes:userNotificationActionSettings:]
+The value of this property is nil by default.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *NS_AVAILABLE_IOS ( 8 _0</Declaration>
+			
+			
+			<Anchor>//api/name/_0</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SINLocalNotification/_0</TokenIdentifier>
+			<Abstract type="html">Category of the local notification, as passed to
+[UIUserNotificationSettings settingsForUserNotificationTypes:userNotificationActionSettings:]
+The value of this property is nil by default.</Abstract>
+			<DeclaredIn>SINLocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *NS_AVAILABLE_IOS ( 8 _0</Declaration>
+			
+			
+			<Anchor>//api/name/_0</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

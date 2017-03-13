@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/SINCallDirection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SINCallDirection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SINCall.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallDirectionIncoming</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallDirectionIncoming</Declaration>
+            
+            <DeclaredIn>SINCall.h</DeclaredIn>
+            
+            <NodeRef refid="30"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SINCallDirectionOutgoing</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SINCallDirectionOutgoing</Declaration>
+            
+            <DeclaredIn>SINCall.h</DeclaredIn>
+            
+            <NodeRef refid="30"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

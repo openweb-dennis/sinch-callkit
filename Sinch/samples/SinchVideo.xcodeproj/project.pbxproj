@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0046CDED80D98BE2C9246BB5 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42527AB661120008BF385BC /* GLKit.framework */; };
+		07AAAC1CC4E2B0737B4AFBF3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2018F4E0BAAF60A47258274C /* QuartzCore.framework */; };
+		097D7D44BC718BB20F35312F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0292115860E40E50B5710A60 /* Foundation.framework */; };
+		0B315FFF9099C6B15A325E60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BCC8DD01F07329BE33D895 /* main.m */; };
+		10CCA94F4D13336A6DF3879E /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5510E19EA017073BEC6222F6 /* VideoToolbox.framework */; };
+		1DF82B65898653CD7E13B15B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DDED2475B8052C0F788329 /* MainViewController.m */; };
+		1EFB9CAB277CD2C864A7D270 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB3A4C63547C3A95E0A437 /* AppDelegate.m */; };
+		264CBDA6A70D604D12D2728E /* MainViewController+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 16862FD596AD063856B2DBF7 /* MainViewController+UI.m */; };
+		49D12686B42054AE8FF88024 /* PaddedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B67EF4CE33515DA2DABC56F /* PaddedTextField.m */; };
+		521054204B7CA7EE963B17F5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BEE025B2A4557790224AE0 /* LoginViewController.m */; };
+		57301CF61E71D26700081031 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57301CF51E71D26700081031 /* PushKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		579BF7D11E71D59500D2DE8A /* MainStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579BF7D01E71D59500D2DE8A /* MainStoryBoard.storyboard */; };
+		579BF7D41E72B78500D2DE8A /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579BF7D31E72B78500D2DE8A /* CallKit.framework */; };
+		5A456E79E5B25CCC12100EE3 /* ringback.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04A332658091B8514005FD4A /* ringback.wav */; };
+		612BB0ACC45683606854B7DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B706B45CD60E9F5BDB0D3601 /* Images.xcassets */; };
+		67DC5AF559E0410D2B4A0A69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA59D6741CDA45D6C1EF9AF /* AVFoundation.framework */; };
+		78EE4ABDB64DA01F19D281F6 /* CallViewController+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBE04C8AD4040BA8669D212 /* CallViewController+UI.m */; };
+		797A470E28EABFE6B9ACD088 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94679206FA9A546E911B6A75 /* CoreVideo.framework */; };
+		7C4465038C42734FE834FC4C /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7E7427D55914A45CE4CD04AE /* incoming.wav */; };
+		7EDD5EDE8A4ACD19214DB3CC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E9E83C50E26B3A8BD2041B /* AudioToolbox.framework */; };
+		9453D99ADF78A1D5AB21D874 /* Sinch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7F32663653214B38728C46 /* Sinch.xcassets */; };
+		9C2F04C976AEA5C45D31FDB1 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760F11BB341FF934347DB6BE /* CallViewController.m */; };
+		9D7234844101E8D661EF4026 /* Sinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBFF37E04BAACECA30D07F8 /* Sinch.framework */; };
+		B29299CC46C3F85D7309F71A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90380711320A9FFD884E7D9 /* CoreMedia.framework */; };
+		BF71BC975FB1415AD8D5F4C1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2E213FC4CDFE8F51406035 /* OpenGLES.framework */; };
+		D91B33228FCB5AA755B82B4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1F6915568F0C47498DB4F4 /* CoreGraphics.framework */; };
+		E12BAE9E2F81A8E64F006321 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC83D00BA4BD0CF6E3B6DF99 /* UIKit.framework */; };
+		E817EAA93DA67C865664114E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1F370EC2211B12922A6AC1 /* Security.framework */; };
+		FD539E5862C6899C455EE228 /* SINUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E757108E86D4FF0F8D028C /* SINUIViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0292115860E40E50B5710A60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04A332658091B8514005FD4A /* ringback.wav */ = {isa = PBXFileReference; lastKnownFileType = text; name = ringback.wav; path = SinchVideo/ringback.wav; sourceTree = "<group>"; };
+		10DDED2475B8052C0F788329 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = SinchVideo/MainViewController.m; sourceTree = "<group>"; };
+		16862FD596AD063856B2DBF7 /* MainViewController+UI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MainViewController+UI.m"; path = "SinchVideo/MainViewController+UI.m"; sourceTree = "<group>"; };
+		1BA59D6741CDA45D6C1EF9AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2018F4E0BAAF60A47258274C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		332692751BBBDE3ABEFF1B01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SinchVideo/AppDelegate.h; sourceTree = "<group>"; };
+		39E9E83C50E26B3A8BD2041B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3EBFF37E04BAACECA30D07F8 /* Sinch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sinch.framework; path = ../Sinch.framework; sourceTree = "<group>"; };
+		427FB63DA8A210D8A7ED184A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = text; name = Prefix.pch; path = SinchVideo/Prefix.pch; sourceTree = "<group>"; };
+		42B90D6EEED2FAF862F04233 /* CallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CallViewController.h; path = SinchVideo/CallViewController.h; sourceTree = "<group>"; };
+		4454BA0CA9D908C263886C92 /* CallViewController+UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CallViewController+UI.h"; path = "SinchVideo/CallViewController+UI.h"; sourceTree = "<group>"; };
+		5510E19EA017073BEC6222F6 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		57301CF51E71D26700081031 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		579BF7D01E71D59500D2DE8A /* MainStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryBoard.storyboard; sourceTree = "<group>"; };
+		579BF7D21E72962B00D2DE8A /* SinchVideo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SinchVideo.entitlements; path = SinchVideo/SinchVideo.entitlements; sourceTree = "<group>"; };
+		579BF7D31E72B78500D2DE8A /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		5A1F370EC2211B12922A6AC1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6C7F32663653214B38728C46 /* Sinch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Sinch.xcassets; path = SinchVideo/Sinch.xcassets; sourceTree = "<group>"; };
+		6D2E213FC4CDFE8F51406035 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		760F11BB341FF934347DB6BE /* CallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CallViewController.m; path = SinchVideo/CallViewController.m; sourceTree = "<group>"; };
+		77E757108E86D4FF0F8D028C /* SINUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SINUIViewController.m; path = SinchVideo/SINUIViewController.m; sourceTree = "<group>"; };
+		7E7427D55914A45CE4CD04AE /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = text; name = incoming.wav; path = SinchVideo/incoming.wav; sourceTree = "<group>"; };
+		89BCC8DD01F07329BE33D895 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SinchVideo/main.m; sourceTree = "<group>"; };
+		94679206FA9A546E911B6A75 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9663BF59C80A195D32489B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SinchVideo/Info.plist; sourceTree = "<group>"; };
+		9B67EF4CE33515DA2DABC56F /* PaddedTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PaddedTextField.m; path = SinchVideo/PaddedTextField.m; sourceTree = "<group>"; };
+		9E55B5B7AA5EFAE4DA557F91 /* SINUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SINUIViewController.h; path = SinchVideo/SINUIViewController.h; sourceTree = "<group>"; };
+		ACBC2872C765E406D84B7654 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = SinchVideo/MainViewController.h; sourceTree = "<group>"; };
+		B614D8940025505C84C49FFD /* SinchVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinchVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B706B45CD60E9F5BDB0D3601 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SinchVideo/Images.xcassets; sourceTree = "<group>"; };
+		BDBE04C8AD4040BA8669D212 /* CallViewController+UI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CallViewController+UI.m"; path = "SinchVideo/CallViewController+UI.m"; sourceTree = "<group>"; };
+		C4A46CA901C00FEC3FF95C48 /* PaddedTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PaddedTextField.h; path = SinchVideo/PaddedTextField.h; sourceTree = "<group>"; };
+		C55F011295C6A41CF9F42218 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = SinchVideo/LoginViewController.h; sourceTree = "<group>"; };
+		C90380711320A9FFD884E7D9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C9EB3A4C63547C3A95E0A437 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SinchVideo/AppDelegate.m; sourceTree = "<group>"; };
+		D42527AB661120008BF385BC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D6BEE025B2A4557790224AE0 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = SinchVideo/LoginViewController.m; sourceTree = "<group>"; };
+		DA1F6915568F0C47498DB4F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FC83D00BA4BD0CF6E3B6DF99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AD58287287917C0B256CCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				579BF7D41E72B78500D2DE8A /* CallKit.framework in Frameworks */,
+				57301CF61E71D26700081031 /* PushKit.framework in Frameworks */,
+				67DC5AF559E0410D2B4A0A69 /* AVFoundation.framework in Frameworks */,
+				7EDD5EDE8A4ACD19214DB3CC /* AudioToolbox.framework in Frameworks */,
+				D91B33228FCB5AA755B82B4F /* CoreGraphics.framework in Frameworks */,
+				B29299CC46C3F85D7309F71A /* CoreMedia.framework in Frameworks */,
+				797A470E28EABFE6B9ACD088 /* CoreVideo.framework in Frameworks */,
+				097D7D44BC718BB20F35312F /* Foundation.framework in Frameworks */,
+				0046CDED80D98BE2C9246BB5 /* GLKit.framework in Frameworks */,
+				BF71BC975FB1415AD8D5F4C1 /* OpenGLES.framework in Frameworks */,
+				07AAAC1CC4E2B0737B4AFBF3 /* QuartzCore.framework in Frameworks */,
+				E817EAA93DA67C865664114E /* Security.framework in Frameworks */,
+				9D7234844101E8D661EF4026 /* Sinch.framework in Frameworks */,
+				E12BAE9E2F81A8E64F006321 /* UIKit.framework in Frameworks */,
+				10CCA94F4D13336A6DF3879E /* VideoToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58CDAF1E91456B41427FE747 = {
+			isa = PBXGroup;
+			children = (
+				8D7DAC1AFD4100D5FB5819D6 /* Frameworks */,
+				6B7C66D57B0547FA37419B99 /* Products */,
+				F0D1205B41EEA1323E261346 /* SinchVideo */,
+			);
+			sourceTree = "<group>";
+		};
+		6B7C66D57B0547FA37419B99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B614D8940025505C84C49FFD /* SinchVideo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73AD6E44F46FA56CBE546BBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4454BA0CA9D908C263886C92 /* CallViewController+UI.h */,
+				BDBE04C8AD4040BA8669D212 /* CallViewController+UI.m */,
+				B706B45CD60E9F5BDB0D3601 /* Images.xcassets */,
+				9663BF59C80A195D32489B5F /* Info.plist */,
+				16862FD596AD063856B2DBF7 /* MainViewController+UI.m */,
+				C4A46CA901C00FEC3FF95C48 /* PaddedTextField.h */,
+				9B67EF4CE33515DA2DABC56F /* PaddedTextField.m */,
+				427FB63DA8A210D8A7ED184A /* Prefix.pch */,
+				9E55B5B7AA5EFAE4DA557F91 /* SINUIViewController.h */,
+				77E757108E86D4FF0F8D028C /* SINUIViewController.m */,
+				6C7F32663653214B38728C46 /* Sinch.xcassets */,
+				7E7427D55914A45CE4CD04AE /* incoming.wav */,
+				89BCC8DD01F07329BE33D895 /* main.m */,
+				04A332658091B8514005FD4A /* ringback.wav */,
+				579BF7D01E71D59500D2DE8A /* MainStoryBoard.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D7DAC1AFD4100D5FB5819D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				579BF7D31E72B78500D2DE8A /* CallKit.framework */,
+				57301CF51E71D26700081031 /* PushKit.framework */,
+				1BA59D6741CDA45D6C1EF9AF /* AVFoundation.framework */,
+				39E9E83C50E26B3A8BD2041B /* AudioToolbox.framework */,
+				DA1F6915568F0C47498DB4F4 /* CoreGraphics.framework */,
+				C90380711320A9FFD884E7D9 /* CoreMedia.framework */,
+				94679206FA9A546E911B6A75 /* CoreVideo.framework */,
+				0292115860E40E50B5710A60 /* Foundation.framework */,
+				D42527AB661120008BF385BC /* GLKit.framework */,
+				6D2E213FC4CDFE8F51406035 /* OpenGLES.framework */,
+				2018F4E0BAAF60A47258274C /* QuartzCore.framework */,
+				5A1F370EC2211B12922A6AC1 /* Security.framework */,
+				3EBFF37E04BAACECA30D07F8 /* Sinch.framework */,
+				FC83D00BA4BD0CF6E3B6DF99 /* UIKit.framework */,
+				5510E19EA017073BEC6222F6 /* VideoToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0D1205B41EEA1323E261346 /* SinchVideo */ = {
+			isa = PBXGroup;
+			children = (
+				579BF7D21E72962B00D2DE8A /* SinchVideo.entitlements */,
+				332692751BBBDE3ABEFF1B01 /* AppDelegate.h */,
+				C9EB3A4C63547C3A95E0A437 /* AppDelegate.m */,
+				42B90D6EEED2FAF862F04233 /* CallViewController.h */,
+				760F11BB341FF934347DB6BE /* CallViewController.m */,
+				C55F011295C6A41CF9F42218 /* LoginViewController.h */,
+				D6BEE025B2A4557790224AE0 /* LoginViewController.m */,
+				ACBC2872C765E406D84B7654 /* MainViewController.h */,
+				10DDED2475B8052C0F788329 /* MainViewController.m */,
+				73AD6E44F46FA56CBE546BBF /* Supporting Files */,
+			);
+			name = SinchVideo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A9494E42B0E2C77C0CAB2C8 /* SinchVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01A3A480649674683C1815C1 /* Build configuration list for PBXNativeTarget "SinchVideo" */;
+			buildPhases = (
+				3C82AFEF64752B7206AD58C0 /* Resources */,
+				CF39BBDB597DA6F81DA961E1 /* Sources */,
+				0AD58287287917C0B256CCEB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SinchVideo;
+			productName = SinchVideo;
+			productReference = B614D8940025505C84C49FFD /* SinchVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B0DD9F31CFB2841C74E0E97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+					3A9494E42B0E2C77C0CAB2C8 = {
+						DevelopmentTeam = EJR5WQYFKJ;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E5004A191E71FFC9EABCC38C /* Build configuration list for PBXProject "SinchVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58CDAF1E91456B41427FE747;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A9494E42B0E2C77C0CAB2C8 /* SinchVideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C82AFEF64752B7206AD58C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612BB0ACC45683606854B7DB /* Images.xcassets in Resources */,
+				9453D99ADF78A1D5AB21D874 /* Sinch.xcassets in Resources */,
+				7C4465038C42734FE834FC4C /* incoming.wav in Resources */,
+				579BF7D11E71D59500D2DE8A /* MainStoryBoard.storyboard in Resources */,
+				5A456E79E5B25CCC12100EE3 /* ringback.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF39BBDB597DA6F81DA961E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFB9CAB277CD2C864A7D270 /* AppDelegate.m in Sources */,
+				78EE4ABDB64DA01F19D281F6 /* CallViewController+UI.m in Sources */,
+				9C2F04C976AEA5C45D31FDB1 /* CallViewController.m in Sources */,
+				521054204B7CA7EE963B17F5 /* LoginViewController.m in Sources */,
+				264CBDA6A70D604D12D2728E /* MainViewController+UI.m in Sources */,
+				1DF82B65898653CD7E13B15B /* MainViewController.m in Sources */,
+				49D12686B42054AE8FF88024 /* PaddedTextField.m in Sources */,
+				FD539E5862C6899C455EE228 /* SINUIViewController.m in Sources */,
+				0B315FFF9099C6B15A325E60 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF9D30083CA9C8051E74BF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = SinchVideo/SinchVideo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = EJR5WQYFKJ;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = ..;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					"DEBUG=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = SinchVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/Frameworks",
+					.,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Xlinker",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openweb.VRD;
+				PRODUCT_NAME = SinchVideo;
+				PROVISIONING_PROFILE = "cdb59414-a96d-4387-8e3b-545d07cfc0e0";
+				PROVISIONING_PROFILE_SPECIFIER = VRDProfile;
+				SDKROOT = iphoneos;
+				SINCH_FRAMEWORK_RELATIVE_PATH = ..;
+				WRAPPER_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C51CAB9424B187FBAA19D395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SDKROOT = iphoneos;
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Debug;
+		};
+		EE5385ADFD075CC8FF3DFA3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = SinchVideo/SinchVideo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = EJR5WQYFKJ;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = ..;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = SinchVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/Frameworks",
+					.,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Xlinker",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openweb.VRD;
+				PRODUCT_NAME = SinchVideo;
+				PROVISIONING_PROFILE = "cdb59414-a96d-4387-8e3b-545d07cfc0e0";
+				PROVISIONING_PROFILE_SPECIFIER = VRDProfile;
+				SDKROOT = iphoneos;
+				SINCH_FRAMEWORK_RELATIVE_PATH = ..;
+				WRAPPER_PREFIX = "";
+			};
+			name = Release;
+		};
+		F97D27BDCAAE5F4A77094CC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SDKROOT = iphoneos;
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01A3A480649674683C1815C1 /* Build configuration list for PBXNativeTarget "SinchVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9D30083CA9C8051E74BF84 /* Debug */,
+				EE5385ADFD075CC8FF3DFA3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		E5004A191E71FFC9EABCC38C /* Build configuration list for PBXProject "SinchVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C51CAB9424B187FBAA19D395 /* Debug */,
+				F97D27BDCAAE5F4A77094CC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B0DD9F31CFB2841C74E0E97 /* Project object */;
+}

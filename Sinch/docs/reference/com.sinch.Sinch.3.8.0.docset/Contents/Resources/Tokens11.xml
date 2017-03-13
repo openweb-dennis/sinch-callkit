@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SINCallClientDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SINCallClientDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClientDelegate/client:didReceiveIncomingCall:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that an incoming call has been received.</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)client:(id&lt;SINCallClient&gt;)client didReceiveIncomingCall:(id&lt;SINCall&gt;)call</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">The client informing the delegate that an incoming call
+was received. The delegate of the incoming call object
+should be set by the implementation of this method.</Abstract>
+				</Parameter><Parameter>
+					<Name>call</Name>
+					<Abstract type="html">The incoming call.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/client:didReceiveIncomingCall:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SINCallClientDelegate/client:localNotificationForIncomingCall:</TokenIdentifier>
+			<Abstract type="html">Method for providing presentation related data for a local notification used
+to notify the application user of an incoming call.</Abstract>
+			<DeclaredIn>SINCallClient.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/SINLocalNotification</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCallClient</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intf/SINCall</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (SINLocalNotification *)client:(id&lt;SINCallClient&gt;)client localNotificationForIncomingCall:(id&lt;SINCall&gt;)call</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">The client requesting a local notification</Abstract>
+				</Parameter><Parameter>
+					<Name>call</Name>
+					<Abstract type="html">A SINCall object representing the incoming call.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">SINLocalNotification The delegate is responsible for composing a
+SINLocalNotification which can be used to
+present an incoming call.</Abstract></ReturnValue>
+			<Anchor>//api/name/client:localNotificationForIncomingCall:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

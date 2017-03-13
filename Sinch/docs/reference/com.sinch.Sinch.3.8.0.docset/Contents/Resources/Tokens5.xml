@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UILocalNotification+SINLocalNotificationSinchAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UILocalNotification(SINLocalNotificationSinchAdditions)</TokenIdentifier>
+			<Abstract type="html">SINLocalNotificationSinchAdditions is a set of category methods for
+the UILocalNotification class.</Abstract>
+			<DeclaredIn>SINUILocalNotification+Sinch.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UILocalNotification/sin_isSinchNotification</TokenIdentifier>
+			<Abstract type="html">Indicates that the UILocalNotification was created by the Sinch SDK</Abstract>
+			<DeclaredIn>SINUILocalNotification+Sinch.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sin_isSinchNotification</Declaration>
+			
+			
+			<Anchor>//api/name/sin_isSinchNotification</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UILocalNotification/sin_isIncomingCall</TokenIdentifier>
+			<Abstract type="html">The UILocalNotification represents an incoming call</Abstract>
+			<DeclaredIn>SINUILocalNotification+Sinch.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sin_isIncomingCall</Declaration>
+			
+			
+			<Anchor>//api/name/sin_isIncomingCall</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UILocalNotification/sin_isMissedCall</TokenIdentifier>
+			<Abstract type="html">The UILocalNotification represents a missed call</Abstract>
+			<DeclaredIn>SINUILocalNotification+Sinch.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sin_isMissedCall</Declaration>
+			
+			
+			<Anchor>//api/name/sin_isMissedCall</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

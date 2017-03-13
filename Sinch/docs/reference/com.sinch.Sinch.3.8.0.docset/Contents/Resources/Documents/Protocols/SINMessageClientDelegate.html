@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SINMessageClientDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Sinch </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Sinch</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/message:shouldSendPushNotifications:">- message:shouldSendPushNotifications:</option>
+		
+		<option value="//api/name/messageClient:didReceiveIncomingMessage:">- messageClient:didReceiveIncomingMessage:</option>
+		
+		<option value="//api/name/messageDelivered:">- messageDelivered:</option>
+		
+		<option value="//api/name/messageFailed:info:">- messageFailed:info:</option>
+		
+		<option value="//api/name/messageSent:recipientId:">- messageSent:recipientId:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SINMessageClientDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SINMessageClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The message client delegate by which message events are communicated.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/messageClient:didReceiveIncomingMessage:" title="messageClient:didReceiveIncomingMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messageClient:didReceiveIncomingMessage:">&ndash;&nbsp;messageClient:didReceiveIncomingMessage:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells the delegate that a message has been received.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)messageClient:(id&lt;SINMessageClient&gt;)<em>messageClient</em> didReceiveIncomingMessage:(id&lt;SINMessage&gt;)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>messageClient</code></th>
+						<td><p>The message client that is informing the delegate.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The incoming message.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINMessageClient.html">SINMessageClient</a>, <a href="../Protocols/SINMessage.html">SINMessage</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINMessageClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messageSent:recipientId:" title="messageSent:recipientId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messageSent:recipientId:">&ndash;&nbsp;messageSent:recipientId:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells the delegate that a message for a specific recipient has been sent by the local user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)messageSent:(id&lt;SINMessage&gt;)<em>message</em> recipientId:(NSString *)<em>recipientId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>Message that was sent.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>recipientId</code></th>
+						<td><p>Recipient of the message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called when a message is sent from
+the local message client (i.e. <a href="../Protocols/SINMessageClient.html#//api/name/sendMessage:">[SINMessageClient sendMessage:]</a>).
+This callback is triggered on all devices on which the local user is logged in.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINMessageClient.html">SINMessageClient</a>, <a href="../Protocols/SINMessage.html">SINMessage</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINMessageClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messageDelivered:" title="messageDelivered:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messageDelivered:">&ndash;&nbsp;messageDelivered:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells the delegate that a message has been delivered (to a particular
+recipient).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)messageDelivered:(id&lt;SINMessageDeliveryInfo&gt;)<em>info</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>info</code></th>
+						<td><p>Info identifying the message that was delivered, and to whom.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINMessageClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messageFailed:info:" title="messageFailed:info:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messageFailed:info:">&ndash;&nbsp;messageFailed:info:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells the delegate that the message client failed to send a message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)messageFailed:(id&lt;SINMessage&gt;)<em>message</em> info:(id&lt;SINMessageFailureInfo&gt;)<em>messageFailureInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message that could not be delivered.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>messageFailureInfo</code></th>
+						<td><p><a href="../Protocols/SINMessageFailureInfo.html">SINMessageFailureInfo</a> object,
+identifying the message and for which recipient
+sending the message failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><em>Note</em>: Do not attempt to re-send the <a href="../Protocols/SINMessage.html">SINMessage</a> received, instead,
+create a new <a href="../Classes/SINOutgoingMessage.html">SINOutgoingMessage</a> and send that.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINMessageClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/message:shouldSendPushNotifications:" title="message:shouldSendPushNotifications:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/message:shouldSendPushNotifications:">&ndash;&nbsp;message:shouldSendPushNotifications:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells the delegate that the receiver&rsquo;s device can&rsquo;t be reached directly,
+and it is required to wake up the receiver&rsquo;s application with a push
+notification.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)message:(id&lt;SINMessage&gt;)<em>message</em> shouldSendPushNotifications:(NSArray *)<em>pushPairs</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message for which pushing is required.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pushPairs</code></th>
+						<td><p>Array of SINPushPair. Each pair identififies a certain
+device that should be requested to be woken up via
+Apple Push Notification.</p>
+
+<p>The push data entries are equal to what the receiver&rsquo;s
+application passed to the method
+<a href="../Protocols/SINClient.html#//api/name/registerPushNotificationData:">[SINClient registerPushNotificationData:]</a> method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/SINPushPair.html">SINPushPair</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SINMessageClient.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Sinch. All rights reserved. Updated: 2015-11-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
