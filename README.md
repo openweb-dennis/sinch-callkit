@@ -15,3 +15,7 @@ You can download Sinch here:
 And you can take a look at the documentation here:
 
   https://www.sinch.com/docs/voice/ios/#introduction
+
+For an other framework that does use callkit in an objective c project you can look here:
+
+  https://github.com/twilio/voice-callkit-quickstart-objc
